@@ -1,6 +1,21 @@
+/* We don't need to add the .css extension here because we are using the .css extension in the link tag */
+
 body {
-    background-color: #000;
-    color:white;
+    background-color: #00ccff;
+    color:rgb(255, 255, 255);
     font-size: 21px;
+}
+
+
+
+
+p{
+    color:orange;
+}
+
+h1{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
+    
 }
 
