@@ -10,7 +10,7 @@ body {
 
 
 p{
-    color:orange;
+    color:rgb(0, 0, 0);
 }
 
 h1{
@@ -19,8 +19,7 @@ h1{
     
 }
 div {
-background-color: palevioletred;
-width: 500px ;
-height: 100px;
+background-color: rgb(243, 229, 234);
+w 
 
 }
