@@ -18,4 +18,9 @@ h1{
     color:rgb(255, 255, 255);
     
 }
+div {
+background-color: palevioletred;
+width: 500px ;
+height: 100px;
 
+}
