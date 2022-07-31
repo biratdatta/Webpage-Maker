@@ -1,5 +1,8 @@
 /* CSS Box Model */
-
+/*
+Margin:
+Border:
+Padding: */
 body{
 
     background-color: aqua;
@@ -8,7 +11,7 @@ body{
 
 .box{
     background: pink;
-    width: 300px;
-    
+    width: 500px;
+        margin: 500px;
 }
 
