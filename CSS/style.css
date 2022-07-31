@@ -1,7 +1,7 @@
 /* We don't need to add the .css extension here because we are using the .css extension in the link tag */
 
 body {
-    background-color: #00ccff;
+   
     color:rgb(233, 45, 45);
     font-size: 21px;
 }
@@ -19,12 +19,16 @@ h1{
     
 }
  
-div {
-background-color: rgb(243, 229, 234);
-
-
-
-}
+ .bottom-section{
+    background-color: green;
+ }
  span{
     font-size: larger;
- }
+ 
+
+}
+
+.top-section{
+    background-color: pink;
+    
+}
