@@ -1,4 +1,12 @@
+/* CSS Box Model */
+
 body{
 
     background-color: aqua;
 }
+
+
+.box{
+    background: pink;
+}
+
