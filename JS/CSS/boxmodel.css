@@ -8,6 +8,7 @@ body{
     background-color: aqua;
 }
 
+ 
 /* How to use Border */
 
 .box{
@@ -17,6 +18,6 @@ body{
         border-left-width: 5px;
         border-left-color: black;
         border-left-style: solid;
-        
+        padding: 100px;
 }
 
