@@ -8,12 +8,12 @@ body{
     background-color: aqua;
 }
 
+/* How to use Border */
 
 .box{
     background: pink;
     width: 500px;
-        margin-top: 50px;
-        margin-bottom: 100px;
+         border: 5px solid green;
         border-left-width: 5px;
         border-left-color: black;
         border-left-style: solid;
