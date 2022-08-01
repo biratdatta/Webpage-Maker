@@ -14,5 +14,9 @@ body{
     width: 500px;
         margin-top: 50px;
         margin-bottom: 100px;
+        border-left-width: 5px;
+        border-left-color: black;
+        border-left-style: solid;
+        
 }
 
