@@ -83,6 +83,22 @@ This is Really a website!
               <p></p>   <!--This is a link text too -->
    </a>
 </p>
+<script type="text/javascript">
+    var number = 0;
+    function Click() {
+        // the value will increase by every click
+        number+=1;
+         // declaring the value of div using a variable
+        document.getElementById("abc").innerHTML = number;
+       
+    };
+</script>
+<p> Now let's learn how to make a counter in html using simple js</p>
+<p> here is a div in which there will be a number which will increase as we will click a buttom</p>
+<!-- Lets give it a id name so we can access its value using getElementbyId -->
+<div ><p id ="abcd"><a id="abc">0</a></p></div>
+<button type = "button" onClick="Click()">Click Me</button>
+
 <!-- Now if we want a secondary link in the folder itself then this is the way-->
 <a href="SECOND PAGE.html">
     <p>
@@ -102,6 +118,7 @@ This is Really a website!
 
  
 </p>
+
 
 
 
