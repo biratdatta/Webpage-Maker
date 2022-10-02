@@ -1,7 +1,7 @@
 /* We don't need to add the .css extension here because we are using the .css extension in the link tag */
 
 body {
-   
+   background-color: bisque;
     color:rgb(233, 45, 45);
     font-size: 21px;
 }
