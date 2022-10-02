@@ -15,3 +15,22 @@ Preview:
 <h4>Heading 4</h4>
 <h5>Heading 5</h5>
 <br>
+
+## Adding images or link
+```html
+[link-name](link-site)
+![img-name](img-file-or-link)
+```
+Preview:<br>
+[Google](google.com)<br>
+![Google](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png)
+
+## Text styles
+```html
+**bold**
+_italic_
+~~strikethrough~~
+```
+**Bold**
+_Italic_
+~~strikethrough~~
