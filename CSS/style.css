@@ -32,3 +32,9 @@ h1{
     background-color: pink;
     
 }
+.tab{
+    color:black;
+}
+table,th,td {
+    border: 1px solid black;
+}
