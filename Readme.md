@@ -1,4 +1,5 @@
-This is a new page for my Updates in Github. This is a text base / code tutorial for getting into HTML or a cheatsheat.
+This is a new page for my Updates in Github. This is a text base / code tutorial for getting into HTML or a cheatsheat. Star is Repo and add more valuable information to it
+
 
 
 
