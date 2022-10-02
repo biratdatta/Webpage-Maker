@@ -38,3 +38,7 @@ h1{
 table,th,td {
     border: 1px solid black;
 }
+.note{
+    font-size: 120%;
+  color: rgb(60, 26, 207);
+}
