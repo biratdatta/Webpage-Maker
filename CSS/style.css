@@ -49,18 +49,3 @@ td {
     color: rgb(60, 26, 207);
 }
 
-#btn {
-
-    background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
-    width: 6.2rem;
-    height: 2rem;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-
-}
-#btn:active{
-    transform: translateY(2px);
-}
