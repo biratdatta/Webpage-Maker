@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&family=Poppins&display=swap" rel="stylesheet">);
+        *,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #2D0065 0%, #000000 100%);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+
+.bttn-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    width: 2rem;
+    height: 1rem;
+
+    border-radius: 1.25em;
+    padding: 2em 3.25em 2em 3.25em;
+    background: rgb(13, 0, 26);
+    color: white;
+    background-blend-mode: multiply;
+    box-shadow: 0em .25em 2em 0em rgba(253, 151, 255, 1);
+
+}
+
+.bttn-one:hover {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: #FDB0FF;
+    text-shadow: 0px 3px 15px #FB4EFF;
+
+}
+
+
+
+.bttn-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    width: 2rem;
+    height: 1rem;
+
+    padding: 2em 3.25em 2em 3.25em;
+    background: #010028;
+    color: white;
+    background-blend-mode: multiply;
+    box-shadow: 0em .25em 2em 0em #B0FFF1;
+    border-radius: 1.25em;
+
+}
+
+.bttn-two:hover {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    align-items: center;
+    text-align: center;
+
+    color: #B0FFF1;
+
+    text-shadow: 0px 3px 15px #00FFD1;
+
+}
+
+
+
+.bttn-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+
+    width: 2rem;
+    height: 1rem;
+
+    border-radius: 1.25em;
+    padding: 2em 3.25em 2em 3.25em;
+    background: #00110d;
+    color: white;
+    background-blend-mode: multiply;
+    box-shadow: 0em .25em 2em 0em #CDFF7A;
+}
+
+.bttn-three:hover {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-decoration: none;
+    padding: 0;
+    width: 0;
+    height: 0;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FDFFB0;
+
+    text-shadow: 0px 3px 15px #C2C600;
+}
+body {
+  background: #121212;
+  padding: 40px;
+}
+
+.section {
+  background: #111;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 80px;
+  box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.btn-container {
+  margin-top: 25px;
+}
+
+.btn-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 30px 15px;
+}
+
+@media (max-width: 768px) {
+  .btn-row {
+    flex-direction: column;
+  }
+}
+
+.btn {
+  padding: 15px 40px;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 8px 16px;
+  transition: 0.3s ease;
+}
+
+.btn-round {
+  border-radius: 8px;
+}
+
+.b-level-2.b-type-1 {
+  border: 1px solid #dd2476;
+  background: transparent;
+  color: #dd2476;
+  position: relative;
+}
+
+.b-level-2.b-type-1:hover {
+  box-shadow: 8px 8px #a52961;
+}
+
+.b-level-2.b-type-2 {
+  border: 3px solid #ff512f;
+  background-image: -webkit-linear-gradient(30deg, #ff512f 50%, #111 50%);
+  background-size: 500px;
+  background-position: 0%;
+  background-repeat: no-repeat;
+}
+
+.b-level-2.b-type-2:hover {
+  background-position: 100%;
+  color: #ff512f;
+}
+
+.b-level-2.b-type-3 {
+  background: transparent;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.b-level-2.b-type-3:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.b-level-2.b-type-4 {
+  border: 3px solid #dd2476;
+  background: transparent;
+  color: #dd2476;
+}
+
+.b-level-2.b-type-4:hover {
+  box-shadow: 0 0 10px 0 #dd2476 inset, 0 0 20px 2px #dd2476;
+}
+
+.b-level-2.b-type-5 {
+  background: transparent;
+  color: #ff512f;
+  border: 3px solid #ff512f;
+  position: relative;
+  transform: perspective(1px);
+  overflow: hidden;
+}
+
+.b-level-2.b-type-5::before {
+  content: "";
+  position: absolute;
+  background: #ff512f;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  right: 0;
+  bottom: 0;
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(0);
+  width: 100%;
+}
+
+.b-level-2.b-type-5:hover {
+  color: #111;
+}
+
+.b-level-2.b-type-5:hover::before {
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(4);
+  transition: transform 0.2s ease-out;
+}
+
+.b-level-2.b-type-5:active::before {
+  transform: translate(-50%, -50%) rotate(135deg) scaleY(10);
+}
+
+.b-level-2.b-type-6 {
+  background: #dd2476;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.b-level-2.b-type-6::before {
+  content: "";
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -10%;
+  left: -180%;
+  transition: 0.3s ease-in-out;
+}
+
+.b-level-2.b-type-6:hover::before {
+  left: 60%;
+}
+
+
+    </style>
+</head>
+<body>
+    <section class="section">
+  
+  <div class="btn-container">
+    <div class="btn-row">
+      <button class="btn btn-round b-level-2 b-type-1">Button</button>
+      <button class="btn b-level-2 b-type-2">Button</button>
+      <button class="btn b-level-2 b-type-3">Button</button>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-round b-level-2 b-type-4">Button</button>
+      <button class="btn btn-round b-level-2 b-type-5">Button</button>
+      <button class="btn b-level-2 b-type-6">Button</button>
+    </div>
+  </div>
+</section>
+
+   <section>
+     <div class="container">
+    <button type="button" class="bttn-one" value="Click Me">Click Me!</button>
+    <button type="button" class="bttn-two">Click Me!</button>
+    <button type="button" class="bttn-three">Click Me!</button>
+    
+  </div>
+   </section>
+</body>
+</html>
