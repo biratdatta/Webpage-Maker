@@ -8,6 +8,12 @@ body {
 
 
 
+.my-class {
+    text-align: center;
+    width:1300px;
+    padding:15px; 
+  }
+  
 
 p{
     color:rgb(0, 0, 0);
