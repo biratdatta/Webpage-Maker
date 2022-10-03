@@ -48,3 +48,8 @@ table,th,td {
     font-size: 120%;
   color: rgb(60, 26, 207);
 }
+.container{
+    box-sizing: content-box;
+    padding: 5px;
+    margin-bottom: 5px;
+}
