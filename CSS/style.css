@@ -1,44 +1,66 @@
 /* We don't need to add the .css extension here because we are using the .css extension in the link tag */
 
 body {
-   background-color: bisque;
-    color:rgb(233, 45, 45);
+    background-color: bisque;
+    color: rgb(233, 45, 45);
     font-size: 21px;
 }
 
 
 
 
-p{
-    color:rgb(0, 0, 0);
+p {
+    color: rgb(0, 0, 0);
 }
 
-h1{
+h1 {
     font-size: 30px;
-    color:rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);
+
 }
- 
- .bottom-section{
+
+.bottom-section {
     background-color: green;
- }
- span{
+}
+
+span {
     font-size: larger;
- 
 
-}  
 
-.top-section{
+}
+
+.top-section {
     background-color: pink;
-    
+
 }
-.tab{
-    color:black;
+
+.tab {
+    color: black;
 }
-table,th,td {
+
+table,
+th,
+td {
     border: 1px solid black;
 }
-.note{
+
+.note {
     font-size: 120%;
-  color: rgb(60, 26, 207);
+    color: rgb(60, 26, 207);
+}
+
+#btn {
+
+    background-image: linear-gradient(to right, rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+    width: 6.2rem;
+    height: 2rem;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+#btn:active{
+    transform: translateY(2px);
 }
