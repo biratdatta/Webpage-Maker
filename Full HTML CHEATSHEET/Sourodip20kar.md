@@ -267,9 +267,90 @@ Sets a single-line text box for picking a color
   
 ## HTML Graphics
   
-  `<canvas>`
-  This element is used to draw graphics on a web page and this element is only a container for graphics. You must use JavaScript to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
-  
+`<canvas>`
+This element is used to draw graphics on a web page and this element is only a container for graphics. You must use JavaScript to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+
 `<svg>`  
-  SVG (Scalable Vector Graphics) defines vector-based graphics in XML format.element is a container for SVG graphics.
-  SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+SVG (Scalable Vector Graphics) defines vector-based graphics in XML format.element is a container for SVG graphics.
+SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+
+## HTML Deprecated Tags
+
+`<acronym>` 
+Tells the browser that the characters it contains are an acronym or abbreviation.
+Use instead `<abbr> </abbr>`.
+
+`<applet>`	
+Defines embedded Java applet.	
+Use instead `<object> </object>`.
+
+`<basefont>`	
+Specifies the default font size and color of the text. It can be used several times inside the `<head>` or `<body>` tags.
+
+`<big>`	
+Increases the font size by one conventional unit.	
+Use instead CSS styles.
+
+`<blink>`	
+Creates an enclosed text, which flashes slowly.	
+Use instead animation.
+
+`<center>`	
+Aligns the content to the center.	
+Use instead text-align.
+
+`<dir>`	
+Defines a list of directory titles.	
+Use instead `<ul> </ul>` or list-style.
+
+`<embed>`	
+Used as a container for external applications, multimedia and interactive content that the browser doesn’t understand.
+Use instead `<object> </object>`.
+
+`<font>`	
+Defines the font characteristics.	
+Use instead CSS styles.
+
+`<frame>`	
+Defines a specific window, a frame, where we can load another web page.	
+Use instead `<iframe> </iframe>`
+
+`<frameset>`	
+Defines the structure of a frame, number of columns and rows, and how many percent/pixels it will occupy in a frame.	
+
+`<isindex>`	
+Displays search strings in the current document.	
+Use instead `<form> </form>`
+
+`<noframes>`	
+Contains an alternate text to be displayed in browsers that do not support frames.	
+
+`<marquee>`	
+Creates a scrolling text or an image.	
+Use instead animation or transform.
+
+`<menu>`	
+Defines where to open the link.	
+Use instead `<ul> </ul>`.
+
+`<plaintext>`	
+Tells the browser, that its content must be displayed as an ordinary text without formatting.	
+Use instead `<pre> </pre>`.
+
+`<s>`	
+Defines a text, which is not relevant anymore.	
+Use instead text-decoration.
+
+`<strike>`	
+Defines the strikethrough text.	
+Use instead `<del>` or CSS styles.
+
+`<tt>`	
+Defines text to be displayed in monospace or fixed-width font as it would appear on a teletype or typewriter.	
+Use instead font-family, `<kbd>`, `<code>` or `<spam>`.
+
+`<u>`	
+In HTML 4.01 specifies an underlined text. In HTML 5, specifies text that is stylistically different from normal text.	
+Use instead text-decoration.
+
+
