@@ -152,3 +152,124 @@ Sets width of image, in pixels
   
 `<img src="URL" alt=?>`
 Sets the alternate text for browsers that can't process images (required by the ADA)
+  
+## Forms
+`<form> </form>`
+Defines a form
+  
+`<select multiple name=? size=?> </select>`
+Creates a scrolling menu. Size sets the number of menu items visible before user needs to scroll.
+  
+`<select name=?> </select>`
+Creates a pulldown menu
+  
+`<option>`
+Sets off each menu item
+  
+`<textarea name=? cols="x" rows="y"></textarea>`
+Creates a text box area. Columns set the width; rows set the height.
+  
+`<input type="checkbox" name=? value=?>`
+Creates a checkbox.
+  
+`<input type="checkbox" name=? value=? checked>`
+Creates a checkbox which is pre-checked.
+  
+`<input type="radio" name=? value=?>`
+Creates a radio button.
+  
+`<input type="radio" name=? value=? checked>`
+Creates a radio button which is pre-checked.
+  
+`<input type="text" name=? size=?>`
+Creates a one-line text area. Size sets length, in characters.
+  
+`<input type="submit" value=?>`
+Creates a submit button. Value sets the text in the submit button.
+  
+`<input type="image" name=? src=? border=? alt=?>`
+Creates a submit button using an image.
+  
+`<input type="reset">`
+Creates a reset button
+  
+## Tables (use only for data layout - use CSS for page layout) 
+  
+`<table> </table>`
+Creates a table
+  
+`<tr> </tr>`
+Sets off each row in a table
+  
+`<td> </td>`
+Sets off each cell in a row
+  
+`<th> </th>`
+Sets off the table header (a normal cell with bold, centered text)
+ 
+## Table attributes (only use for email newsletters)
+  
+`<table border=?>`
+Sets the width of the border around table cells
+  
+`<table cellspacing=?>`
+Sets amount of space between table cells
+  
+`<table cellpadding=?>`
+Sets amount of space between a cell's border and its contents
+  
+`<table width=?>`
+Sets width of the table in pixels or as a percentage
+  
+`<tr align=?>`
+Sets alignment for cells within the row (left/center/right)
+  
+`<td align=?>`
+Sets alignment for cells (left/center/right)
+  
+`<tr valign=?>`
+Sets vertical alignment for cells within the row (top/middle/bottom)
+  
+`<td valign=?>`
+Sets vertical alignment for cell (top/middle/bottom)
+  
+`<td rowspan=?>`
+Sets number of rows a cell should span (default=1)
+  
+`<td colspan=?>`
+Sets number of columns a cell should span
+  
+`<td nowrap>`
+Prevents lines within a cell from being broken to fit
+  
+## HTML5 input tag attributes
+
+`<input type="email" name=?>`
+Sets a single-line textbox for email addresses
+  
+`<input type="url" name=?>`
+Sets a single-line textbox for URLs
+  
+`<input type="number" name=?>`
+Sets a single-line textbox for a number
+  
+`<input type="range" name=?>`
+Sets a single-line text box for a range of numbers
+  
+`<input type="date/month/week/time" name=?>`
+Sets a single-line text box with a calendar showing the date/month/week/time
+  
+`<input type="search" name=?>`
+Sets a single-line text box for searching
+  
+`<input type="color" name=?>`
+Sets a single-line text box for picking a color
+  
+## HTML Graphics
+  
+  `<canvas>`
+  This element is used to draw graphics on a web page and this element is only a container for graphics. You must use JavaScript to actually draw the graphics. Canvas has several methods for drawing paths, boxes, circles, text, and adding images.
+  
+`<svg>`  
+  SVG (Scalable Vector Graphics) defines vector-based graphics in XML format.element is a container for SVG graphics.
+  SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
