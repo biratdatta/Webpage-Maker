@@ -84,6 +84,8 @@ Creates a target location within a document
 `<a href="#NAME">clickable text</a>`
 Creates a link to that target location
   
+`<iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>`
+  Embeds the youtube video in HTML
 ## Formatting
 
  `<p> </p>`
