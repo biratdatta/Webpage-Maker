@@ -1,0 +1,337 @@
+HTML(Hyper Text Markup Language) Structure {Skeleton of your body} [https://www.w3schools.com/html/] -
+
+<div class="hey">supp?</div>   :   HTML Element
+<_______________><____>   :   Opening Tag <_______________> & Closing Tag <____>
+div   :   Element Name
+class   :   Attribute
+hey   :   Value
+supp?   :   Content
+
+> em -> relative unit. Primarily used when dealing with margins and paddings. Helps responsively scale your websites well.
+> rem -> relative unit. Primarily used when dealing with font-size.
+~ Basically that both rem and em are scalable and relative units of size, but with em, the unit is relative to the font size of its parent element, while the rem unit is only relative to the root font size of the HTML document.
+> vh -> view port height
+
+<table> : To build HTML tables - 
+<tr> - table row (Signifies every new row in the table)
+<th> - table header (Table column headers)
+<td> - table data (Data filled in table rows, to be filled in same order as column headers)
+
+HTML Lists :
+List elements (<li>)
+1) Unordered list (<ul>)
+Example - An unordered HTML list:
+> Item
+> Item
+> Item
+> Item
+
+2) Ordered list (<ol>)
+Example - An ordered HTML list:
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+
+Block-level Elements :
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element. Example - Two commonly used block elements are: <p> and <div>.
+Inline Elements :
+An inline element does not start on a new line. An inline element only takes up as much width as necessary. Example - <a>, <b>, <span>
+
+<div> element : Often used as a container for other HTML elements.
+
+class attribute (Example - <div class="my-class"></div>): Often used to point to a class name in a style sheet. It can also be used by a JavaScript to access and manipulate elements with the specific class name. The class attribute can be used on any HTML element.
+
+id attribute (Example - <div id="my-id"></div>) : Used to specify a unique id for an HTML element.
+The value of the id attribute must be unique within the HTML document. The id attribute is used to point to a specific style declaration in a style sheet. It is also used by JavaScript to access and manipulate the element with the specific id.
+
+An HTML iframe is used to display a web page within a web page.
+
+The HTML <script> tag is used to define a client-side script (JavaScript). The <script> element either contains script statements, or it points to an external script file through the src attribute.To select an HTML element, JavaScript most often uses the document.getElementById() method.
+
+The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+HTML has several semantic elements that define the different parts of a web page:
+
+HTML5 Semantic Elements	
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+
+A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: <div> and <span> - Tells nothing about its content. Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+
+An HTML form is used to collect user input. The HTML <form> element is used to create an HTML form for user input.
+<input type="text">	    - Displays a single-line text input field
+<input type="radio">	- Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	- Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	- Displays a submit button (for submitting the form) data to a form-handler. The form-handler is typically a file on the server with a script for processing input data.
+<input type="button">	- Displays a clickable button
+
+The method attribute specifies the HTTP method to be used when submitting the form data. The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+Notes on GET:
+> Appends the form data to the URL, in name/value pairs
+> NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+> The length of a URL is limited (2048 characters)
+> Useful for form submissions where a user wants to bookmark the result
+> GET is good for non-secure data, like query strings in Google
+
+Notes on POST:
+> Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+> POST has no size limitations, and can be used to send large amounts of data.
+> Form submissions with POST cannot be bookmarked
+
+Always use POST if the form data contains sensitive or personal information!
+
+The HTML <canvas> element is used to draw graphics, on the fly, via JavaScript. The <canvas> element is only a container for graphics. You must use JavaScript to actually draw the graphics.
+
+SVG - Scalable Vector Graphics. It is a language for describing 2D graphics in XML.
+
+The HTML <video> element is used to show a video on a web page. Example - 
+<video width="320" height="240" controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+Q) How does it work?
+Ans) The controls attribute adds video controls, like play, pause, and volume. 
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+The <source> element allows you to specify alternative video files which the browser may choose from. The browser will use the first recognized format.
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element.
+
+The HTML <audio> element is used to play an audio file on a web page. Example -
+<audio controls>
+  <source src="horse.ogg" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+Q) How does it work?
+Ans) The controls attribute adds audio controls, like play, pause, and volume.
+The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+
+Playing a YouTube Video in HTML
+To play your video on a web page, do the following:
+> Upload the video to YouTube
+> Take a note of the video id
+> Define an <iframe> element in your web page
+> Let the src attribute point to the video URL
+> Use the width and height attributes to specify the dimension of the player
+> Add any other parameters to the URL (see below)
+Example - 
+<iframe width="DESIRED_WIDTH" height="DESIRED_HEIGHT"
+src="YOUTUBE_VIDEO_LINK">        <!-- Link to the video you want to add -->
+</iframe>
+
+The footer is placed at the bottom of your page. It often contains information like copyright and contact info
+
+
+
+
+
+CSS(Cascading Style Sheets) Structure {Flesh of your body (Appearance)} -
+
+CSS is the language we use to style an HTML document.
+
+.hey {
+    background: blue;
+    font-size: 1em;
+}   -   Ruleset
+.hey   -   Selector
+background: blue;   -   Declaration
+
+{ CSS can be added to HTML documents in 3 ways:
+> Inline - by using the style attribute inside HTML elements
+> Internal - by using a <style> element in the <head> section
+> External - by using a <link> element to link to an external CSS file }
+
+Q) Difference between margin and padding?
+Ans) In CSS, a margin is the space around an element’s border, while padding is the space between an element’s border and the element’s content.
+
+To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+To select elements with a specific class, write a period (.) character, followed by the class name.
+
+Cascading Order :
+What style will be used when there is more than one style specified for an HTML element?
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules, where number one has the highest priority:
+> Inline style (inside an HTML element)
+> External and internal style sheets (in the head section)
+> Browser default
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+
+margin property order : top, right, bottom, left
+
+** Margins are used to create space around elements, outside of any defined borders.
+** Padding is used to create space around an element's content, inside of any defined borders.
+
+CSS Box Model : Margin {Clears an area outside the border. The margin is transparent}, Border {A border that goes around the padding and content}, Padding {Clears an area around the content. The padding is transparent}, Content {The content of the box, where text and images appear}
+
+CSS Outline : An outline is a line that is drawn around elements, OUTSIDE the borders, to make the element "stand out".
+
+The text-align property is used to set the horizontal alignment of a text.
+The vertical-align property sets the vertical alignment of an element.
+
+The text-transform property is used to specify uppercase and lowercase letters in a text.
+
+For icons (https://fontawesome.com/). Copy code and add it to the head section of your HTML page.
+
+In addition, links can be styled differently depending on what state they are in.
+
+The four links states are:
+> a:link - a normal, unvisited link
+> a:visited - a link the user has visited
+> a:hover - a link when the user mouses over it
+> a:active - a link the moment it is clicked
+
+A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). Example = <div>
+An inline element does not start on a new line and only takes up as much width as necessary. Example - <span>
+
+display: none; is commonly used with JavaScript to hide and show elements without deleting and recreating them.
+
+The position property specifies the type of positioning method used for an element. There are five different position values:
+> static - An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page. Static positioned elements are not affected by the top, bottom, left, and right properties.
+> relative - An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position.
+> fixed - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element.
+> absolute - An element with position: absolute; is positioned relative to the nearest positioned ancestor.
+> sticky - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others). NOTE - z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).
+
+The CSS overflow property controls what happens to content that is too big to fit into an area. The overflow property specifies whether to clip the content or to add scrollbars when the content of an element is too big to fit in the specified area. The overflow property has the following values:
+> visible - Default. The overflow is not clipped. The content renders outside the element's box
+> hidden - The overflow is clipped, and the rest of the content will be invisible
+> scroll - The overflow is clipped, and a scrollbar is added to see the rest of the content
+> auto - Similar to scroll, but it adds scrollbars only when necessary
+overflow-x specifies what to do with the left/right edges of the content.
+overflow-y specifies what to do with the top/bottom edges of the content.
+
+IMP - The float property is used for positioning and formatting content e.g. let an image float left to the text in a container. {https://www.w3schools.com/css/css_float.asp}. Clearfix Hack - If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix to solve this problem.
+
+To horizontally center a block element (like <div>), use margin: auto;
+To just center the text inside an element, use text-align: center;
+To center an image, set left and right margin to auto and make it into a block element:
+To center both vertically and horizontally, use padding and text-align: center:
+
+The opacity property is often used together with the :hover selector to change the opacity on mouse-over. {https://www.w3schools.com/css/css_image_transparency.asp}
+
+Responsive NavBar {https://www.w3schools.com/css/tryit.asp?filename=trycss_navbar_horizontal_responsive}
+
+IMP - Dropdown[Create a hoverable dropdown with CSS] {https://www.w3schools.com/css/css_dropdowns.asp}
+
+Lengths -> Absolute Lengths(cm, mm, px, etc), Relative Lengths(em, ex, rem, vh, etc)
+
+The !important rule in CSS is used to add more importance to a property/value than normal. In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+
+With the CSS border-radius property, you can give any element "rounded corners".
+
+For full-size background images => background-size: cover;
+
+Background Gradient { LINEAR -> Diagonal } => background-image: linear-gradient(to bottom right, red, yellow);
+Also there are RADIAL and CONIC gradients.
+
+With CSS you can add shadow to text and to elements {text-shadow || box-shadow}
+
+2D Transformations in CSS -> {https://www.w3schools.com/css/css3_2dtransforms.asp}
+3D Transformations in CSS -> {https://www.w3schools.com/css/css3_3dtransforms.asp}
+Transitions in CSS -> { https://www.w3schools.com/css/css3_3dtransforms.asp } [CSS transitions allows you to change property values smoothly, over a given duration]
+
+Create tooltips with CSS { A tooltip is often used to specify extra information about something when the user moves the mouse pointer over an element }
+
+The box-reflect property is used to create an image reflection.
+
+With CSS masking you create a mask layer to place over an element to partially or fully hide portions of the element. {https://www.w3schools.com/css/css3_masking.asp}
+
+If you have a website with lots of pages, you may wish to add some sort of pagination to each page.
+
+CSS variables - {https://www.w3schools.com/css/css3_variables.asp}. var() function is used to insert the value of a CSS variable.
+To create a variable with global scope, declare it inside the :root selector. The :root selector matches the document's root element.
+To create a variable with local scope, declare it inside the selector that is going to use it.
+IMP - local variables can override global variables
+
+The @media rule, introduced in CSS2, made it possible to define different style rules for different media types. Unfortunately these media types never got a lot of support by devices, other than the print media type. Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device. In simple words, Media queries are a popular technique for delivering a tailored style sheet to different devices
+
+
+{https://www.youtube.com/watch?v=3YW65K6LcIA}
+Flexbox / Flexible Box is a one-dimensional layout model that provides a method to offer space distribution and powerful alignment capabilities.
+Flex container{created with => display: flex} is the element that holds flex items{direct children of flex containers}
+> flex-direction: row => Main Axis - Horizontal || Cross Axis - Vertical
+> flex-direction: column => Main Axis - Vertical || Cross Axis - Horizontal
+
+*** justify-content => aligns flex items on the main-axis
+align-items => aligns flex items on the cross-axis ***
+
+display: flex; / display: flex; justify-content: start;    => Flex items are arranged in a row {left -> right}
+display: flex; justify-content: end;    => Flex items are arranged in a row {right -> left}
+display: flex; justify-content: center;    => Flex items are arranged in a row {center}
+display: flex; justify-content: space-around;    => Flex items are arranged in a row {flex items are spaced around evenly in the flex-container}
+display: flex; justify-content: space-between;    => Adds even space between Flex items
+display: flex; justify-content: space-between; align-items: end    => Adds even space between Flex items; only difference they are now placed at the bottom of the flex-container{vertically}
+display: flex; justify-content: space-between; align-items: center    => Adds even space between Flex items; only difference they are now placed at the center of the flex-container{vertically}
+
+flex-direction: row;  => default
+flex-direction: row-reverse;  => [1, 2, 3] -> [3, 2, 1]
+flex-direction: column;   => Makes vertical axis as the main axis
+
+To center the content INSIDE the flex-items, 
+In the flex-item class, write :
+.flex-item {
+  dislpay: flex;
+  justify-content: center;    // Horizontal align
+  align-items: center;        // Vertical align
+}
+
+In the flex-container, as the number of flex-items increases, due to space constraints they are shrink to an undesirable extent, using *flex-wrap: wrap*, pushes the items to the next lines, thereby preserving the aesthetics of the flex-items. {Responsiveness++}
+
+IMP - *flex-grow* {If you want the width of your flex-items to grow at different proportional rates, example - the width of one flex-item grows at a rate x, whereas the width of the second flex-item grows at a rate 2x, on increasing screen size}
+
+If the *flex-grow* of every flex-item is uniform, then on increasing/decreasing the sreen-resolution, the width of every flex-item increases/decreases uniformly. Example - *flex-grow: 1* for every flex-item.
+flex-shrink is the opposite of flex-grow
+
+*flex: 1* -> Equi-width boxes (Responsive++)
+
+box-sizing property set to border-box ensures that the padding and border are included in the total width and height of the elements.
+
+How to make an image responsive?
+If the width property is set to a percentage and the height property is set to "auto", the image will be responsive and scale up and down.
+
+How to make a video responsive?
+If the width property is set to 100%, the video player will be responsive and scale up and down.
+
+
+{https://www.youtube.com/watch?v=0xMQfnTU6oo}
+CSS Grid :
+Is a powerful tool that CSS gives us to easily align items and create two-dimensional layouts.
+Grid container{created with => display: grid} is the element that holds grid items{direct children of grid containers}
+Flexbox -> One-dimensional
+CSS Grid -> Two-dimensional {Slightly more powerful}
+
+dislpay: grid; 
+grid-template-columns: width_of_column1, width_of_column2, width_of_column3, .... ;
+
+EXAMPLE - If you desire to have 3 columns of 1fr width each;
+grid-template-columns: 1fr, 1fr, 1fr;       { ---> }
+OR grid-template-columns: repeat(3, 1fr);
+EXAMPLE - If you desire to have 3 rows of 1fr width each;
+grid-template-rows: 1fr, 1fr, 1fr;          { | }
+OR grid-template-riws: repeat(3, 1fr);      { v }
+
+*column-gap:* & *row-gap:* as name suggests, adds space between columns and rows respectively.
+*gap:* = *column-gap:* + *row-gap:* combined.
+
+*grid-auto-rows: minmax(200px, auto);*
+min -> 200px
+max -> auto
+If any grid item has internal content occupying more than 200px height, grid-row height is auto set to inhabit the content, else the height is set to default 200px.
+
+*align-items* -> stretch{default} / start / end
+*justify-content* -> start / end / space-around / etc
+
+*grid-column: 1 / 3;* => grid column 1 now occupies column 2 space too.   [1, 3)
+*grid-row: 2 / 4;* => grid row 2 now occupies row 3 space too.    [2, 4)
+
+IMP - *grid-template-areas*
+
+PROJECT in CSS Grid - https://youtu.be/0xMQfnTU6oo?t=2369 {Testimonial Website}
