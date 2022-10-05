@@ -11,7 +11,7 @@ body {
 .my-class {
     text-align: center;
     width:1300px;
-    padding:15px; 
+    padding:15px;
   }
   
 
@@ -19,10 +19,17 @@ p{
     color:rgb(0, 0, 0);
 }
 
+.quotes{
+    padding: 0.2em;
+    display: grid;
+    grid-gap: 1em;
+    border-radius: 0.3em;
+    box-shadow: 10px 10px 10px rgba(146, 119, 44,0.1);
+}
+
 h1{
     font-size: 30px;
     color:rgb(255, 255, 255);
-    
 }
  
  .bottom-section{
