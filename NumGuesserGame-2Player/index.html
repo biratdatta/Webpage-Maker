@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberGuesser</title>
+    <link rel="stylesheet" href="NumGuesser.css">
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Number Guesser</h2>
+    </div>
+
+    <div class="container">
+
+        <div class="player1" id="player1">
+            <h3>Player 1</h3>
+            Enter Name : <input type="text" class="player1name" id="player1name">
+            <br>
+            Guess a number b/w 1 and 50 : <input type="number" class="player1guess" id="player1guess">
+
+            <button class="p1finish" id="p1finish" onclick="random1()">GO !</button>
+
+            <div id="p1lessormore"></div>
+        </div>
+
+        <div id="id_winner">
+            <img src="https://wallpapercave.com/wp/wp9872545.jpg" alt="">
+
+            <div id="winner">
+
+            </div>
+        </div>
+
+
+        <div class="player1" id="player2">
+            <h3>Player 2</h3>
+            Enter Name : <input type="text" class="player1name" id="player2name">
+            <br>
+            Guess a number b/w 1 and 50 : <input type="number" class="player1guess" id="player2guess">
+
+            <button class="p1finish" id="p2finish" onclick="random2()">GO !</button>
+
+            <div id="p1lessormore2"></div>
+        </div>
+    </div>
+
+    <div class="empty">
+
+    </div>
+    
+    <script src="NumGuesser.js"></script>
+
+</body>
+
+</html>
