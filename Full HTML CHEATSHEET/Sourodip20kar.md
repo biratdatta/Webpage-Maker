@@ -355,4 +355,26 @@ Use instead font-family, `<kbd>`, `<code>` or `<spam>`.
 In HTML 4.01 specifies an underlined text. In HTML 5, specifies text that is stylistically different from normal text.	
 Use instead text-decoration.
 
+## HTML Mathematical Symbols
 
+`&#8704` 
+Displays the symbol `∀` (For all)
+
+`&#8706`
+Displays the symbol `∂` (Partial Differentiation)
+
+`&#8707`
+Displays the symbol `∃` (There exists)
+
+`&#8709`
+Displays the symbol `∅` (Empty/Null set)
+
+`&#8712`
+Displays the symbol `∈` (Element of)
+
+`&#8713`
+Displays the symbol `∉` (Not element of)
+
+`&#8721`
+Displays the symbol `∑` (Summation)
+  
