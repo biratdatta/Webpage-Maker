@@ -1,7 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .page_404 {
     padding: 40px 0;
     background: #fff;
     font-family: "Arvo", serif;
+    margin-bottom: 25px;
+    
   }
   
   .page_404 img {
@@ -13,7 +19,7 @@
   
   .four_zero_four_bg {
     background-image: url("images/404.gif");
-    height: 400px;
+    height: 300px;
     background-position: center;
   }
   
@@ -33,5 +39,48 @@
     display: inline-block;
   }
   .contant_box_404 {
-    margin-top: -50px;
+    margin-top: 20px;
   }
+  /* button */
+  .buttons {
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+.btn-hover.color-3 {
+  background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+  box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+  font-size: 25px;
+}
+.adjust{
+  margin-bottom: 25px;
+}
