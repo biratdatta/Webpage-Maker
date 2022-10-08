@@ -1,90 +1,64 @@
 # How to contribute 
 - Sign up via the hacktoberfest account as a contributor at https://hacktoberfest.com/
 
-## Instructions for submitting a pull request:
+## Instructions for submitting a pull request👩‍💻👨‍💻:
 
-Follow the below mentioned steps to open a pull request(PR):
-
+Below you will find the process and workflow used to review and merge your changes.
 - If you don't have git on your machine, [install it](https://help.github.com/articles/set-up-git/).
 
-## Fork this repository
+## Step 1 : Find an issue
+- Take a look at the Existing issues or create your **own** issues!
+- Wait for the issue to be assigned to you after which you can start working on it.
 
-- Fork this repository by clicking on the fork button on the top of this page.
-This will create a copy of this repository in your account.
-
-## Clone the repository
-
-- Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the code button and then click the _copy to clipboard_ icon.
-
-- Open a terminal and run the following git command:
-
+## Step 2 : Fork the Project
+- Fork this Repository. This will create a Local Copy of this Repository on your Github Profile. Keep a reference to the original project in `upstream` remote.
 ```
-git clone "url you just copied"
+$ git clone https://github.com/<your-username>/Webpage-Maker
+$ cd Webpage-Maker
+$ git remote add upstream https://github.com/biratdatta/Webpage-Maker
 ```
 
-- where "url you just copied" (without the quotation marks) is the url to this repository (your fork of this project). See the previous steps to obtain the url.
-
-For example:
-
+- If you have already forked the project, update your copy before working.
 ```
-git clone https://github.com/this-is-you/Webpage-Maker.git
+$ git remote update
+$ git checkout <branch-name>
+$ git rebase upstream/<branch-name>
 ```
-
-where `this-is-you` is your GitHub username. Here you're copying the contents of the first-contributions repository on GitHub to your computer.
-
-## Create a branch
-
-- Change to the repository directory on your computer (if you are not already there):
-
+## Step 3 : Branch
 ```
-cd Webpage-Maker
+# To create a new branch with name branch_name and switch to that branch 
+$ git checkout -b <branch_name>
 ```
-
-- Now create a branch using the `git switch` command:
-
+## Step 4 : Work on the issue assigned
+- Work on the issue assigned to you. 
+- After you've made changes or made your contribution to the project add changes to the branch you've just created by:
 ```
-git switch -c your-new-branch-name
+# To add all new files to branch branch_name
+$ git add .
 ```
+## Step 5 : Commit
 
-For example:
-
+- To commit give a descriptive message for the convenience of reveiwer by:
 ```
-git switch -c improved contributing guidelines
+# This message get associated with all files you have changed
+$ git commit -m "message"
 ```
 
-## Make necessary changes and commit those changes
-
-- If you go to the project directory and execute the command `git status`, you'll see there are changes.
-
-- Add those changes to the branch you just created using the `git add` command:
+## Step 6 : Work Remotely
+- Now you are ready to your work to the remote repository.
+- When your work is ready and complies with the project conventions, upload your changes to your fork:
 
 ```
-git add "filename with extention in which you have made changes"
+# To push your work to your remote repository
+$ git push -u origin <branch_name>
 ```
 
-- Now commit those changes using the `git commit` command:
-
-```
-git commit -m "Add relavent message to the change you made"
-```
-
-## Push changes to GitHub
-
-- Push your changes using the command `git push`:
-
-```
-git push origin -u your-branch-name
-```
-
-- replacing `your-branch-name` with the name of the branch you created earlier.
-
-## Submit your changes for review
-
-- If you go to your repository on GitHub, you'll see a `Compare & pull request` button. Click on that button.
-
-- Now submit the pull request.
-
-- Soon reviewer will be merging all your changes into the main branch of this project. You will get a notification email once the changes have been merged.
+## Step 7 : Pull Request
+- Go to your repository in browser and click on compare and pull requests. Then add a title and description to your pull request that explains your contribution.
+- Then add a title to your pull request.
+- Mention the issue number in your PR.
+- Give a brief description about the changes.
+- Your Pull Request has been submitted and will be reviewed by the owner and merged.🥳
 
 ## Contributing as a designer:
 - All of the above
