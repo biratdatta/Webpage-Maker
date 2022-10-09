@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<style>
+.navigation {
+  background: linear-gradient(to right, #fff 50%, #087A49 50%);
+  transition: 0.2s ease;
+  font-family: 'Roboto Slab',serif;
+}
+@media (max-width: 991px) {
+  .navigation {
+    background: #fff;
+
+  }
+}
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        padding: 15px;
+        
+        height: 100%;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 300ms ease-in-out;
+        margin-top: -50px;
+        padding-top: 50px;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 500ms ease-in-out;
+    }
+}
+
+
+.navbar-nav {
+  padding-left: 10px;
+  background: #087A49;
+}
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding: 50px 0;
+    background: #1a1a37;
+  }
+}
+.navbar-brand img{
+  height: 60px;
+  width: 80px;
+  margin-left: -50px;
+  margin-right: 50px;
+
+}
+@media (max-width: 992px){
+  .navbar-brand img{
+  margin-left: 0px;
+  margin-right: 0px;
+
+}
+}
+.nav-bg {
+  background-color: #fff;
+}
+
+.nav-item {
+  margin: 0 15px;
+  position: relative;
+}
+@media (max-width: 991px) {
+  .nav-item:last-child {
+    margin-bottom: 20px;
+  }
+}
+.nav-item .nav-link {
+  text-transform: uppercase;
+  font-weight: 450;
+  color: #fff;
+}
+.nav-item::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+  content: "";
+  background: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.3s ease;
+  pointer-events: none;
+}
+@media (max-width: 991px) {
+  .nav-item::before {
+    opacity: 0.1;
+    height: 100%;
+  }
+}
+.nav-item:hover::before, .nav-item.active::before {
+  transform: scaleY(1);
+  transform-origin: bottom;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+}
+
+link:focus,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show > .nav-link {
+  color: #fff;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 30px 0px;
+}
+@media (max-width: 991px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 12px 20px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0509803922);
+}
+
+.navbar .nav-item > .dropdown-toggle::after {
+  border: 0;
+  margin-left: 0.255em;
+  vertical-align: 1px;
+  content: '';
+  font-size: 11px;
+  width: auto;
+}
+.navbar .dropdown .dropdown-menu li {
+  padding-top: 10px;
+}
+.navbar .dropdown .dropdown-menu li:last-child {
+  padding-bottom: 15px;
+}
+.navbar .dropdown .dropdown-menu.dropdown-submenu {
+  top: 0;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown .dropdown-menu.dropdown-submenu li:first-child {
+    margin-top: 15px;
+  }
+}
+.navbar .dropdown .dropdown-item .dropdown-toggle {
+  display: block;
+  line-height: 1.8;
+}
+.navbar .dropdown:hover > .dropdown-menu {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.navbar .dropdown-menu {
+  box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
+  border-bottom: 5px solid #087A49;
+  padding: 0 15px;
+  padding-left: 5px;
+  top: 96px;
+  border-radius: 0;
+  display: block;
+  visibility: hidden;
+  transition: 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  background: #fff;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    padding-left: 15px;
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transform-origin: unset;
+    margin: 0;
+    border: 0;
+    position: static;
+  }
+}
+
+.navbar .dropdown-menu.show {
+  visibility: hidden;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown-menu.show {
+    visibility: visible;
+    display: block;
+  }
+}
+.navbar .dropdown .dropdown .dropdown-toggle, .navbar .dropdown-item {
+  position: relative;
+  color: #1e1e4b;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+}
+@media (max-width: 991px) {
+  .navbar .dropdown .dropdown .dropdown-toggle, .navbar .dropdown-item {
+    text-align: center;
+  }
+}
+.navbar .dropdown .dropdown .dropdown-toggle:hover, .navbar .dropdown-item:hover {
+  color: #087A49;
+  background: transparent;
+}
+</style>
+</head>
+<body>
+
+<!-- header -->
+<header class="fixed-top header">
+  <div class="navigation w-100 shadow">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg  p-0">
+        <a class="navbar-brand" href="index.php">
+          <img src="../images/icon.jpg">
+        </a>
+        <button class="navbar-toggler rounded-0" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
+          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-dark text-dark"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav ml-auto text-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Link1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link2</a>
+            </li>
+            <li class="nav-item dropdown view">
+              <a class="nav-link dropdown-toggle" href="./academics.php" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Link3 <i class="fa-solid fa-caret-down"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Link2.1</a></li>
+              <li><a class="dropdown-item" href="#">Link2.2</a></li>
+                                          
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link5</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="#">Link6</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link7</a>
+            </li>
+            
+
+
+
+        </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+</body>
+</html>
