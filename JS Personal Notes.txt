@@ -1,0 +1,316 @@
+**alert("Hello World")**
+Would display a pop up.
+
+**console.log("Hello World")**
+Would display the output.
+
+**document.querySelector(".Class_Name")**
+EXAMPLE :- document.querySelector(".gNO89b")
+Returns the element, whose class_name is called (with all it's composition)
+
+& to click, document.querySelector(".gNO89b").click()
+document.querySelector(".RNmpXc").click() --> Will Automatically click the button.
+
+**document.getElementByID("ID_NAME")**
+Returns the element, whose ID is called (with all it's composition)
+
+**DOM Manipulation**
+If we want to change the internal contents, using web tools, we can use tools/mmethods like innerHTML
+
+Example:
+<div id="firstContainer" class="container">
+   <h3>Hello World</h3>
+</div>
+
+Browser would show "Hello World", but if I use DevTools on Browser, go to console, and type there
+firstContainer.innerHTML = "Computer Engineering";
+
+Then instead of showing me, Hello World... Now it would show me
+Computer Engineering --> But remember this is just temporary...Refreshing the page, would again give back our original content.
+
+**document.getElementsByTagName('NAME OF TAG')**
+would return an array of all places that particular tag is used, we can do some tweaks with this and play around.
+Just to show that we can use Javascript to edit HTML as well as CSS. (#beautyofjs)
+
+**display: none; ----> Element only gets wiped off.
+visibility: hidden; -----> Element stays there, just it's not visible.**
+
+**To write something on Display using JS, use
+document.write("XYZ");**
+
+**To add custom warnings in the console log, we use 
+console.warn("XYZ");
+similarly, to add custom errors in the console log, we use 
+console.error("XYZ"); **
+
+**To clear console, type
+console.clear() **
+
+**console.assert()**
+
+**Variables - Containers to store values**
+Example : var num1 = 34;
+
+****DATATYPES IN JS****
+
+// Numbers
+EXAMPLE:- var num1 = 455;
+
+//String
+EXAMPLE :- var str1 = "Hey Ansfred";
+
+//**Objects** ---> key : value pairs
+EXAMPLE :- var marks = {
+		Ansfred : 98.47,
+		Gaurav : 67,
+		Tejas : 91
+		}
+console.log(marks);
+
+OUTPUT :-
+{Ansfred : 98.47, Gaurav : 67, Tejas : 91}
+
+//Booleans 
+true
+false
+EXAMPLE :- 
+var a = true;
+var b = false;
+console.log(a);
+console.log(a, b);
+
+OUTPUT :- 
+true
+true false
+
+**Undefined --> VALUE MISSING**
+EXAMPLE 1:
+var a;
+console.log(a);
+
+OUTPUT:
+undefined
+
+EXAMPLE 2
+var a = undefined;
+console.log(a);
+
+OUTPUT:
+undefined
+
+**Null --> Purposely, if we want to keep a variable empty, then we define the variable as :-
+var a = null;
+console.log(a);
+
+OUTPUT :- 
+null**
+
+**At a very high level, there are two types of data types in JS**
+1) Primitive Data Type : undefined, null, number, string, boolean, symbol
+2) Reference Data Type : arrays, objects
+
+** ARRAYS :- Collection of elements (numbers, strings, etc) **
+var arr = [1,2,3,4,5];
+console.log(arr);
+
+OUTPUT :-
+(5) [1,2,3,4,5]
+
+console.log(arr[3]);
+
+OUTPUT :-
+4
+
+**Operators in JS**
+Arithmetic Operators - (+, - *, /)
+Example:
+a = 10;
+b = 20;
+console.log("THE SUM OF a AND b is ", a + b);
+
+Assignment Operator -
+a = 10;
+b = a;
+console.log(b);
+
+Output - 10
+
+Comparison Operator -
+a = 10;
+b = 20;
+console.log(a == b);
+
+Output - false
+
+Logical Operators -
+"&&" OR "||" OR "!"
+
+Example for && --> And:
+console.log(true && false)
+Output:
+false
+
+Example for || ---> Or:
+console.log(true || false)
+Output:
+true
+
+Example for ! --> Not Operaotr:
+console.log(! true);
+Output:
+false
+
+**Functions**		-----> WORKS ON THE PRINCIPLE OF DRY(DO NOT REPEAT YOURSELF)
+function FUNCTION_NAME (X, Y){
+	return OPERATION_TO_BEPERFORMED;
+	}
+
+C1 = FUNCTION_NAME(A, B);
+console.log(C1);
+
+**Conditionals**
+if, else, else if ...
+IF-ELSE LADDER
+
+**LOOPING**
+
+var array = [1, 2, 3, 4, 5];
+for (var i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+array.length --> equivalent of len() function of python 
+
+**forEach**
+To write the above loop in short, we make use of this function.
+SYNTAX:-
+var array = [1, 2, 3, 4, 5];
+array.forEach(function(element){
+	console.log(element);
+})
+
+NOTE :- FOR BETTER MEMORY MANAGEMENT --> USE 'LET' instead of 'VAR', etc....
+Because 'Let' gives variables a local scope which is good, and hence the scope of these variables will only be restricted to the scope of out functions, thereby providing optimum memory management.
+
+**const** --> Similar to 'var' in JS we have something called as 'const', just that once the value of const is decared it can't be changed...
+Example:-
+
+const a = 0;
+a += 1;
+
+Output :- Uncaught TypeError: Assignment to constant variable.
+
+**while loop**
+
+Example:-
+var array = [1, 2, 3, 4, 5];
+let j = 0;
+while (j < array.length) {
+  console.log(array[j]);
+  j++;
+}
+
+Output:-
+1
+2
+3
+4
+5
+
+**do-while loop**
+Similar to that of c++. Exit-controlled loop, which runs atleast once even if the test condition is not satisfied.
+
+Example :-
+let xy = 7;
+do {
+  console.log('KYA BOLRI PUBLIC ? :0');
+  xy++;
+} while (xy < 6);     //Should not have printed 'KYA BOLRI PUBLIC ? :0' even once, because xy = 7 is not less than 6, but as we know do-while loop is exit-controlled, therefore even if the test condtion fails, it will still run once.
+
+**BREAK/CONTINUE**
+SAME AS ANY PROGRAMMING LANGUAGE, CAN BE USED TO TERMINATE/SKIP A PROCESS IN A LOOP....
+
+****SOME** ARRAY OPERATIONS**
+array.length --> Will give the length of the array
+array.pop() --> Unlike any other language, pop function removes the last element of the array.
+array.push(element) --> Pushes the new desired element to the last of the array
+array.shift() --> Returns other elements of the array, except the first one
+array.unshift(element) --> Returns the array, with new element adde to the beginning of the array.
+array.toString() --> Returns elements of the array in a single string
+array.sort() --> 
+// To sort an array logically in js
+// let myarr = [2, 43, 12, 1345, 1];
+// console.log(myarr.sort((a, b) => a - b));  --> for acending sort
+// console.log(myarr.sort((a, b) => b - a));  --> for descending sort
+// if we simply do, myarr.sort(), it would give us [1, 12, 1345, 2, 43] which is wrong
+
+**STRING METHODS**
+Example:
+let myString = "Ansfred is a good boy good good";
+~> console.log(myString.length);
+~> console.log(myString.indexOf(element));  --> reurns 1st index of the desired element to be searched.
+Example: console.log(myString.indexOf("good"));
+Output is 13
+
+~> similarly to find last index of desired element we use console.log(myString.lastIndexOf(element));
+Output is 27
+~> slice -- console.log(myString.slice(0, 3));  --> for slicing of strings
+Output:- Ans
+
+~> replace - 
+Example:- to replace in a string we use:-
+myString.replace("Ansfred", "Rajkumar");
+NOTE :- Replace removes only first occurence of the string.
+
+Output:-
+Rajkumar is a good boy good good
+
+
+**Dates**
+to display actual date and time
+let myDate = new Date()
+console.log(myDate);
+
+Similarly 
+~> getTime() --> returns date in count of seconds
+~> getFullYear() --> returns the year 
+~> getDay() --> returns the day of the week but in integer form
+~> getMinutes() --> returns answer in minutes
+~> getHours() --> returns answer in hours
+
+DOM Manipulation ---> DOM - Document Object Model
+We make some changes to our HTML, using the console log.
+
+EXAMPLE : document.getElementById('click').click()
+Will automatically click on the 'click' button on the website.
+EXAMPLE 2 :document.getElementById('click').style.border = '2 px solid blue' 
+Will give the 'click' button a blue border
+
+document.getElementsByClassName() --> will return us an array of the occurence of the class at different plsce of the code
+Let's say, I want the first element from the Class array to have 'yelloe' background
+so just type, elemClass = document.get ElementsByClassName()
+console.log(elemClass)
+would return array of occurences
+then if I did console.log(elemClass[0])
+would give first occurence of class on our webpage
+and if we do console.log(elemClass[0].style.background = 'yellow')
+I would get yellow background for the particular color
+
+Let's say we want to add some background-color
+SO we make a class in the style section of the HTML,
+Example : .bg-primary{
+		background-color : "violet";
+		}
+And in JS to add this feature to a particular section/class of our webpage
+elemClass = document.getElementsByClassName()
+console.log(elemClass)
+would give an array of class occurence... Lets say we want to add this background feature only to the first occurence of the class
+elemClass[0].classList.add('bg-primary')
+Now, we see, the background color gets attached to the first occurence of the class on our webpage.
+
+To get plain HTML of anything
+Example : elemClass[0].innerHTML --> would give us the entire HTML hidden
+elemClass[0].innerHTML
+"\n      <h3>PRIORITY LIST :</h3>\n      <ol>\n        <li>Devsnest</li>\n        <li>Internship</li>\n        <li>College</li>\n      </ol>\n    "
+elemClass[0].innerText
+"PRIORITY LIST :\nDevsnest\nInternship\nCollege"

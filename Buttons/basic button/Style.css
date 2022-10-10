@@ -1,0 +1,24 @@
+#btn{
+    display: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(13, 13, 14);
+}
+.btn{
+    width: 10rem;
+    height: 3rem;
+    background-color: rgb(240, 240, 248);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    color: rgb(20, 20, 18);
+    border-radius: 12px;
+}
+.btn:hover{
+    background-color: rgb(224, 211, 28);
+    color: rgb(255, 255, 255);
+}
