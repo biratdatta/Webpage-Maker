@@ -1,126 +1,76 @@
-    /* We don't need to add the .css extension here because we are using the .css extension in the link tag */
+
+/* We don't need to add the .css extension here because we are using the .css extension in the link tag */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body {
+   background-color: bisque;
+    color:rgb(233, 45, 45);
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.intro
+{
+    height: 120vh;
+   
+}
+.logo{
+    color:brown;
+    text-decoration:solid;
+    text-shadow: 4em;
+}
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    padding: 35px;
+    list-style: none;
     
-    body {
-        background-color: #f6f6f6;
-        color: #312f3a;
-        font-size: 21px;
-        font-family: 'roboto';
-    }
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(246, 49, 14);
+}
+
+p{
+    color:rgb(0, 0, 0);
+}
+
+h1{
+    font-size: 30px;
+    color:rgb(255, 255, 255);
     
-    .my-class {
-        text-align: center;
-        width: 1300px;
-        padding: 15px;
-    }
+}
+ 
+ .bottom-section{
+    background-color: green;
+ }
+ span{
+    font-size: larger;
+ 
+
+}  
+
+.top-section{
+    background-color: pink;
     
-    p {
-        color: rgb(0, 0, 0);
-    }
-    
-    .card {
-        height: 370px;
-        width: 300px;
-        border: 1px solid white;
-        background-color: #f7f1ea;
-        box-shadow: 0 10px 20px -10px #faebd2;
-        /* display: flex; */
-        /* justify-content: center; */
-        margin-left: 430px;
-        border-radius: 3px;
-        padding-bottom: 20px;
-    }
-    
-    .container {
-        /* display: inline-block; */
-        /* box-sizing: content-box; */
-        padding: 15px;
-        margin-bottom: 5px;
-        margin-top: 5px;
-    }
-    
-    .btn {
-        /* border-radius: 15px; */
-        text-align: center;
-        cursor: pointer;
-        padding: 10px 15px;
-        color: #1f1e1e;
-        border-radius: 5px;
-        text-transform: capitalize;
-        font-size: 18px;
-        transition: 0.3s;
-        text-decoration: none;
-        background-color: #ffcb74;
-        box-shadow: 0 10px 20px -10px #fac66c;
-    }
-    
-    .btn:hover {
-        background-color: #fbc260;
-    }
-    
-    .quotes {
-        padding: 1em;
-        display: grid;
-        grid-gap: 5px;
-        border-radius: 3px;
-        box-shadow: 0px 5px 5px rgba(146, 119, 44, 0.1);
-    }
-    
-    h1 {
-        font-size: 30px;
-        color: rgb(255, 255, 255);
-    }
-    
-    .stmt {
-        /* border-radius: 15px; */
-        text-align: center;
-        cursor: pointer;
-        padding: 3px 5px;
-        color: #ffff;
-        border-radius: 3px;
-        text-transform: capitalize;
-        font-size: 10px;
-        transition: 0.3s;
-        text-decoration: none;
-        margin-bottom: 10px;
-        background-color: #2f2f2f;
-        box-shadow: 0 5px 10px -5px #353434;
-    }
-    
-    .stmt:hover {
-        background-color: #111111c8;
-    }
-    
-    .bottom-section {
-        background-color: green;
-    }
-    
-    span {
-        font-size: larger;
-    }
-    
-    .top-section {
-        background-color: pink;
-    }
-    
-    .tab {
-        color: black;
-    }
-    
-    table,
-    th,
-    td {
-        border: 1px solid black;
-    }
-    
-    .note {
-        font-size: 120%;
-        color: rgb(60, 26, 207);
-    }
-    
-    .sec {
-        justify-content: center;
-        color: #1f1e1e;
-        border-radius: 3px;
-        display: flex;
-        margin-bottom: 3em;
-    }
+}
+.tab{
+    color:black;
+}
+table,th,td {
+    border: 1px solid black;
+}
+.note{
+    font-size: 120%;
+  color: rgb(60, 26, 207);
+}
