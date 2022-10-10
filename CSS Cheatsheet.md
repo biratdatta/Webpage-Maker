@@ -1,5 +1,47 @@
-
 # CSS CHEATSHEET
+
+**CSS Selectors & classes**
+
+    *           - all elements
+    div         - all 'div' tags
+    div.p       - all 'div' and 'p' paragraphs
+    div p       - paragraphs inside divs
+    div > p     - all 'p' tag one level deep in 'div'
+    div + p     - p tags immediately after div
+    div ~ p     - p tags preceded by div
+
+    .class-name     - all elements with class
+    #id-name        - element with 'id'
+    div.class-name  - divs with certain classname
+    div#id-name     - div with certain 'id'
+    #id-name        - all elements iside that #id-name
+
+    a:link                  - link in normal state
+    a:active                - link in clicked state
+    a:hover                 - link with mouse over it
+    a:visited               - visited link
+    a[target]               - links with a target attribute
+    a[target="_blank"]      - links open in new tab
+    p::after{content:"yo";} - add content after 'p'
+    p::before               - add content before 'p'
+    div:empty               - element without children
+    p::first-letter         - first letter in 'p'
+    p::first-line           - first line in 'p'
+    p:first-of-type         -  first of some type
+    p:last-of-type          - last of some type
+    :not(span)              - element that's not a span
+    p:first-child           - first child of its parent
+    p:last-child            - last child of its parent
+    p:nth-child(2)          - second child of its parent
+    p:nth-child(3n+1)       - nth-child (an + b) formula
+    p:nth-last-child(2)     - second child from behind
+    p:nth-of-type(2)        - second p of its parent
+    p:nth-last-of-type(2)   - second p of its parent from behind
+    p:only-of-type          - unique of its parent
+    p:only-child            - only child of its parent
+    :root                   - documents root element
+    ::selection             - portion selected by user
+    :target                 - highlight active anchor
 
 Font Properties
 
@@ -7,13 +49,13 @@ Font Properties
     Changes the font family of certain words, sentences,
     paragraphs, etc.
     P { font-family: "New Century Schoolbook", Times, serif; }
-                                  
+
 Font-Style
 
     Changes text: normal, oblique, and italics.
     H1 { font-style: oblique; }
     P { font-style: normal; }
-        
+
 Font-Variant
 
     Used to display font in normal or small-caps.
@@ -30,16 +72,15 @@ Font-Size
     H1 { font-size: large; } or P { font-size: 12pt; }
     LI { font-size: 90%; }
     STRONG { font-size: larger; }
- 
+
 Font
 
-   Used to combine all properties of fonts.
+Used to combine all properties of fonts.
 
     P { font: italic bold 12pt/14pt Times, serif; }
 
-
 **Color and Background Properties**
-    
+
 Color
 
     Changes the color of text.
@@ -68,8 +109,8 @@ Background-Repeat
 
 Background-Attachment
 
- Determines if a specified background image will scroll with the
- content or be fixed with regard to the canvas.
+Determines if a specified background image will scroll with the
+content or be fixed with regard to the canvas.
 
     BODY { background: white url(candybar.gif);
     background-attachment: fixed; }
@@ -79,7 +120,6 @@ Background-Attachment
     BLOCKQUOTE { background: #7fffd4; }
     P { background: url(../backgrounds/pawn.png) #f0f8ff fixed; }
     TABLE { background: red url(leaves.jpg) no-repeat bottom right; }
-
 
 **Text Properties**
 
@@ -99,14 +139,14 @@ Defines an additional amount of space between characters.
 
 Text-Decoration
 
-  Allows text to be decorated through one of five properties:
-  underline, overline, line-through, blink, none.
-    
+Allows text to be decorated through one of five properties:
+underline, overline, line-through, blink, none.
+
     A:link, A:visited, A:active { text-decoration: none; }
     Vertical-Align
 
-  Used to alter the vertical positioning of an inline element,
-  relative to its parent element or to the element's line.
+Used to alter the vertical positioning of an inline element,
+relative to its parent element or to the element's line.
 
     IMG.middle { vertical-align: middle; }
     IMG { vertical-align: 50%; }
@@ -114,9 +154,9 @@ Text-Decoration
 
 Text-Transform
 
- Allows for capitalizing the first letter of each word (capitalize),
- capitalizing all letters of a word (uppercase), using all small
- letters in each word(lowercase), and the inital value(none).
+Allows for capitalizing the first letter of each word (capitalize),
+capitalizing all letters of a word (uppercase), using all small
+letters in each word(lowercase), and the inital value(none).
 
     H1 { text-transform: uppercase; }
     H2 { text-transform: capitalize; }
@@ -130,14 +170,14 @@ Used to justify text left, center, right, and justify.
 
 Text-Indent
 
- Used to specify the amount of indentation prior to the first line
- of text.
+Used to specify the amount of indentation prior to the first line
+of text.
 
     P { text-indent: 5em; }
 
 Line-Height
 
- Used to control the spacing between baselines of text.
+Used to control the spacing between baselines of text.
 
     P { line-height: 200%; }
 
@@ -146,9 +186,9 @@ Line-Height
 List-Style-Type
 
 Specifies the type of list-item marker,
- and is used if list-styleimage is none or if image loading is turned off
+and is used if list-styleimage is none or if image loading is turned off
 .
-    
+
     LI.square { list-style-type: square; }
     UL.plain { list-style-type: none; }
     OL { list-style-type: upper-alpha; } /* A B C D E etc. */
@@ -157,53 +197,48 @@ Specifies the type of list-item marker,
 
 List-Style-Image
 
-  Specifies the image that will be used as list-item marker when
-  image loading is turned on, replacing the marker specified in
-  the list-style-type property.
+Specifies the image that will be used as list-item marker when
+image loading is turned on, replacing the marker specified in
+the list-style-type property.
 
     UL.check { list-style-image: url(/LI-markers/checkmark.gif); }
     UL LI.x { list-style-image: url(x.png); }
 
 List-Style-Position
 
- Determines where the marker is placed in regard to the list
- item. If the value inside is used, the lines will wrap under the
+Determines where the marker is placed in regard to the list
+item. If the value inside is used, the lines will wrap under the
 marker instead of being indented. outside is default.
 
-    UL { list-style-position: inside; } 
+    UL { list-style-position: inside; }
 
+**Box Properties**
 
+Margin-Top
 
-
-
-**Box Properties** 
-
-
-  Margin-Top
-
-   Sets the top margin of an element by specifying a length or a
-   percentage.
+Sets the top margin of an element by specifying a length or a
+percentage.
 
     BODY { margin-top: 5pt; }
 
-  Margin-Right
+Margin-Right
 
-  Sets the right margin of an element by specifying a length or a
-  percentage.
+Sets the right margin of an element by specifying a length or a
+percentage.
 
     P.narrow { margin-right: 50%; }
 
 Margin-Bottom
 
- sets the bottom margin of an element by specifying a length or
- a percentage.
+sets the bottom margin of an element by specifying a length or
+a percentage.
 
     DT { margin-bottom: 3em; }
 
 Margin-Left
 
- sets the left margin of an element by specifying a length or a
- percentage.
+sets the left margin of an element by specifying a length or a
+percentage.
 
     ADDRESS { margin-left: 50%; }
 
@@ -253,13 +288,13 @@ and padding-left properties.
 
 Border-Top-Width
 
-  Used to specify the width of an element's top border.
+Used to specify the width of an element's top border.
 
     P { border-top: 20%; }
 
 Border-Right-Width
 
-  Used to specify the width of an element's right border.
+Used to specify the width of an element's right border.
 
     P { border-right: 20%; }
 
@@ -268,10 +303,6 @@ Border-Bottom-Width
 Used to specify the width of an element's bottom border.
 
     P { border-bottom: 20%; }
-
-
-
-
 
 Border-Left-Width
 
@@ -357,22 +388,13 @@ Allows text to wrap around an element (left, right, none).
 
 Clear
 
- Specifies whether an element allows floating elements to its
+Specifies whether an element allows floating elements to its
 
-   sides (left, right, none).
+sides (left, right, none).
 
     P { clear: left; }
     H1 { clear: right; }
     .foo { clear: none; }
-
-
-
-
-
-
-
-
-
 
 **Table**
 
@@ -399,44 +421,42 @@ Caption-Side
 
     caption-side: bottom;
 
-
-
 **Columns**
 
 These properties are used explicitly with columns of the tables, and they are used to give the
 table an incredible look.
 
-Column-Count 
+Column-Count
 
-    column-count : 10; 
+    column-count : 10;
 
-Column-Gap 
+Column-Gap
 
-    column-gap : 5px; 
+    column-gap : 5px;
 
-Column-rule-width 
+Column-rule-width
 
-    column-rule-width : medium; 
+    column-rule-width : medium;
 
-Column-rule-style 
+Column-rule-style
 
-    column-rule-style : dotted ; 
+    column-rule-style : dotted ;
 
-Column-rule-color 
+Column-rule-color
 
-    column-rule-color : black; 
+    column-rule-color : black;
 
-Column-width 
+Column-width
 
-    column-width : 10px; 
+    column-width : 10px;
 
-Column-span 
+Column-span
 
-    column-span : all; 
+    column-span : all;
 
 **List & Markers**
 
-List and marker properties 
+List and marker properties
 
 List-style-type
 
@@ -454,64 +474,52 @@ Marker-offset
 
     marker-offset : auto;
 
-
-
-
 Animations
 
 CSS animations allow one to animate transitions or other media files on the web page.
 
-Animation-name 
+Animation-name
 
-    animation-name : myanimation; 
+    animation-name : myanimation;
 
-Animation-duration 
+Animation-duration
 
-    animation-duration : 10s; 
+    animation-duration : 10s;
 
 Animation-timing-function
 
-    animation-timing-function : ease; 
+    animation-timing-function : ease;
 
-Animation-delay 
+Animation-delay
 
-    animation-delay : 5ms; 
+    animation-delay : 5ms;
 
+Animation-iteration-count
 
+    animation-iteration-count : 3;
 
+Animation-direction
 
-Animation-iteration-count 
+    animation-direction : normal;
 
-    animation-iteration-count : 3; 
+Animation-play-state
 
-Animation-direction 
+    animation-play-state : running;
 
-    animation-direction : normal; 
+Animation-fill-mode
 
-Animation-play-state 
-
-    animation-play-state : running; 
-
-Animation-fill-mode 
-
-    animation-fill-mode : both; 
-
-
-
-
-
+    animation-fill-mode : both;
 
 **CSS Flexbox**
 
 Flexbox is a layout of CSS that lets you format HTML easily. Flexbox makes it simple to align
 items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill
-the space. 
+the space.
 And overall, it makes the responsive design more manageable.
-
 
 Parent Properties (flex container)
 
-  display
+display
 
     display: flex;
 
@@ -519,11 +527,11 @@ flex-direction
 
     flex-direction: row | row-reverse | column | column-reverse;
 
- flex-wrap
+flex-wrap
 
     flex-wrap: nowrap | wrap | wrap-reverse;
 
- flex-flow
+flex-flow
 
     flex-flow: column wrap;
 
@@ -537,16 +545,15 @@ align-items
 
 align-content
 
-    align-content: flex-start | flex-end | center | space-between | space-around 
-  
+    align-content: flex-start | flex-end | center | space-between | space-around
 
 Child Properties (flex items)
 
-  order
- 
+order
+
     order: 5; /* default is 0 */
 
- flex-grow
+flex-grow
 
     flex-grow: 4; /* default 0 */
 
@@ -576,7 +583,6 @@ Parent Properties (Grid container)
 display
 
     display: grid | inline-grid;
-
 
 grid-template-columns
 
@@ -643,7 +649,7 @@ grid-auto-columns
     grid-auto-columns: <track-size> ...;
 
 grid-auto-rows
-   
+
     grid-auto-rows: <track-size> ...;
 
 **Child Properties (Grid items)**
@@ -654,33 +660,27 @@ grid-column-start
 
 grid-column-end
 
-
     grid-column-end: <number> | <name> | span <number> | span <name> | auto;
 
 grid-row-start
-
 
     grid-row-start: <number> | <name> | span <number> | span <name> | auto;
 
 grid-row-end
 
-
     grid-row-end: <number> | <name> | span <number> | span <name> | auto;
 
 grid-column shorthand
-
 
     grid-column: <start-line> / <end-line> | <start-line> / span <value>;
 
 grid-row shorthand
 
-
     grid-row: <start-line> / <end-line> | <start-line> / span <value>;
 
 grid-area
-   
-    grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 
+    grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
 
 justify-self
 
@@ -693,6 +693,3 @@ align-self
 place-self
 
     place-self: center;
-
-
-          
