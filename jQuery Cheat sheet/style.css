@@ -1,0 +1,254 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(27,27,27);
+    font-family: droid-sans, sans-serif;
+}
+
+header {
+    width: 94%;
+    font-family: droid-sans, sans-serif;
+    padding: 24px 20px;
+    color: white;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 96.5%;
+}
+
+h2 {
+    font-family: droid-sans, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+}
+
+ul {
+    font-family: droid-sans, sans-serif;
+    padding: 15px 0px 30px 0px;
+}
+
+ul li {
+    margin-bottom: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: rgb(27,27,27);
+}
+
+.functions h2 {
+    background-color: rgb(219,68,71);
+}
+
+.functions {
+    background-color: rgb(244,76,79);
+}
+
+.functions li:hover {
+    color: rgb(244,76,79);
+}
+
+.selectors h2 {
+    background-color: rgb(229,203,0) ;
+}
+
+.selectors{
+    background-color: rgb(255,226,0);
+}
+
+.selectors li:hover {
+    color: rgb(255,226,0);
+}
+
+.events h2 {
+    background-color: rgb(91,131,197);
+}
+
+.events {
+    background-color: rgb(101,146,219);
+}
+
+.events li:hover {
+    color: rgb(101,146,219);
+}
+
+.modal {
+    position: absolute;
+    background-color: rgba(77, 77, 77, 0.664);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.modal__container {
+    position: relative;
+    width: 60%;
+    background-color: white;
+    margin: 7.5% auto 0 auto;
+    border-radius: 6px;
+    box-shadow: rgba(27, 27, 27, 0.74) 5px 5px 5px 5px;
+}
+
+.modal__container h3 {
+    padding: 6px 10px;
+    font-size: 26px;
+}
+
+#modal__x {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    cursor: pointer;
+    border-radius: 100%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.modal__example {
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-flow: column;
+}
+
+#change-vanilla {
+    background-color: rgb(0, 197, 92);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+#change-vanilla:hover {
+    background-color: rgb(2, 160, 76);
+    transition: 300ms ease-in;
+}
+
+#vanilla {
+    background-color: rgb(0,219,103);
+}
+
+#change-jquery {
+    background-color: rgb(174, 227, 0);
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#change-jquery:hover {
+    background-color: rgb(155, 202, 2);
+    transition: 200ms ease-in;
+}
+
+#jquery {
+    background-color: rgb(194,253,0);
+}
+
+.modal__example__code {
+    display: none;
+    padding: 22px 20px;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+code {
+    display: block;
+    margin: 10px 0;
+    background-color: rgb(215, 241, 161);
+    padding: 5px 10px;
+    border-radius: 6px;
+    max-width: 420px;
+    line-height: 22px;
+    font-size: 17px;
+    font-family: Ubuntu Mono;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: seashell;
+    cursor: pointer;
+}
+
+.modal__example__try {
+    background-color: rgb(245, 245, 245);
+    text-align: center;
+    width: 40%;
+    height: 240px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1.5px solid rgb(199, 199, 199);
+    overflow: auto;
+    word-break: keep-all;
+}
+
+img {
+    width: 200px;
+}
+
+.red {
+    color: crimson;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.selected {
+    background-color: lightcoral;
+    color: white;
+    border-radius: 3px;
+    padding-left: 20px;
+    text-decoration: underline;
+}
+
+select,  input[type="text"] {
+    width: 70%;
+    margin-bottom: 12px;
+    margin-top: 12px;
+    height: 26px;
+    outline: none;
+    font-size: 15px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+#event-6V .modal__example__try {
+    word-break: break-all;
+}
+
+#event-11Q span, #event-11V span {
+    display: inline-block;
+    background-color: lightgreen;
+    margin-top: 25%;
+    border: 1px solid green;
+    padding: 30px;
+}

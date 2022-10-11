@@ -89,3 +89,27 @@
 ---
 Reference : freeCodeCamp.org
 ---
+
+## Advance commands 
+
+```merge - Join two or more development histories together ```
+
+>git merge
+
+stash
+
+>git stash
+
+>git stash apply
+
+```To examine the history and state check these commands (see also: git help revisions)```
+
+bisect     Use binary search to find the commit that introduced a bug
+
+grep       Print lines matching a pattern
+
+```To grow, mark and tweak your common history```
+
+rebase     Reapply commits on top of another base tip
+
+tag        Create, list, delete or verify a tag object signed with GPG
