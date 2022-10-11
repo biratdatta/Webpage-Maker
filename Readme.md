@@ -28,7 +28,22 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 > Personal notes for getting started with Javascript.
 - [Java Fundamentals Cheat Sheet](https://github.com/biratdatta/Webpage-Maker/blob/master/JavaFundamentalCheatsheet.md)
 > Covers notes for getting started with Java.
- 
+- [MySQL Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/MYSQL%20Cheatsheet.md)
+> Covers the basics on MySQL.
+- [NPM Cheatsheat](https://github.com/biratdatta/Webpage-Maker/blob/master/NPM%20Cheat%20Sheet.md)
+> Covers the basics on NPM.
+- [Complete HTML+CSS Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Complete%20%5BHTML%20%2B%20CSS%5D%20CheatSheet.txt)
+> Covers the HTML+CSS complete package
+- [jQuery Cheatsheet](https://github.com/biratdatta/Webpage-Maker/tree/master/jQuery%20Cheat%20sheet)
+> Covers the basics on jQuery.
+- [Git Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Git%20CheatSheet/gitCheatSheet.md)
+> Covers the basics on Git.
+- [React-js Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/React%20Js%20Cheatsheet/reactjs_cheatsheet.md)
+> Covers the basics on React-js.
+- [MongoDB Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Mongodb%20Cheatsheet/mongodb_cheat_sheet.md)
+> MongoDB basics.
+- [Django Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/django%20cheatsheat.md)
+> Covers the basics on Django framework.
 
 ## Want to contribute?
 - Take a look at [`contributing ideas.`](Contributionidea.md).
@@ -46,6 +61,7 @@ Contact me on:- `Baba Yaga#6991` at Discord
 ## Contributors
 
 **Thanks goes to these wonderful people ❤️**
+
 
 <br/>
 <div align="center">
