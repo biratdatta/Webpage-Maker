@@ -1,198 +1,156 @@
-
-<!DOCTYPE html>
-<html>
-    
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title> Website</title>
-    <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body >
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="CSS/style.css">
+    <title>Learning</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Learn&Work</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item" style="padding:20px ;">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item" style="padding:20px ;">
+                <a class="nav-link" href="#StudyMaterial">StudyMaterial</a>
+              </li>
+              <li class="nav-item" style="padding:20px ;">
+                <a class="nav-link" href="#Projects" >Projects</a>
+              </li>
+              <li class="nav-item dropdown" style="padding:20px ;">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Tutorials
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                  <li><a class="dropdown-item" href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-<p style="color: aqua ;">
-<strong> 
-    Let's Make Something
-</strong>
-</p>
-<p>
-    Here is a tutorial in texts for those who wanna learn HTML and CSS
-</p>
 
-Some of the popular webpages links!
-<h1>
-    <a href="https://www.google.com">
-        Google
-    </a>
-    <br>
+  
+<div class="intro">
+    <!-- likhna hai its me and all -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Image/me.jpeg" class="d-block w-100" alt="its me">
+          </div>
+          <div class="carousel-item">
+            <img src="Image/me.jpeg" class="d-block w-100" alt="its me">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
 
+<div class="block" style=" display:flex;padding: 20px; flex-direction: column; align-items: center;" id="StudyMaterial">
+     <strong>Study Materials</strong>
+     <div class="eww" style="display:flex ;">
+        <div class="card" style="width: 18rem; ">
+            <div class="card-body">
+              <h5 class="card-title">HTML</h5>
+              <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+              <p class="card-text">Notes are here to get deep insight knowledge of HTML</p>
+              <a href="#" class="card-link">Get</a>
+            </div>
+          </div>
+          
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">CSS</h5>
+          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
+          <p class="card-text">Notes are here to get deep insight knowledge of CSS</p>
+          <!-- <a href="#" class="card-link">Card link</a> -->
+          <a href="https://www.linkedin.com/posts/prophet-ogwuche_css-variables-a-short-guide-ugcPost-6980385166313570304-7zld?utm_source=share&utm_medium=member_android" class="card-link">Get</a>
+        </div>
+      </div>
+      
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">JS</h5>
+          <p class="card-text">Notes are here to get deep insight knowledge of JS.</p>
+          <a href="https://www.linkedin.com/posts/amanbarnwal_javascript-for-beginners-ugcPost-6983272888942415872-kvOg?utm_source=share&utm_medium=member_android" class="card-link">Get</a>
+        </div>
+      </div>
+      
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">CSS ShapeMaking</h5>
+          
+          <p class="card-text">Learn some interesting shapemaking</p>
+         
+          <a href="https://www.linkedin.com/posts/adnanmanna_the-ultimate-javascript-handbook-ugcPost-6981816603793330176-LWBv?utm_source=share&utm_medium=member_android" class="card-link">Get</a>
+        </div>
+      </div>
 
-    <a href="https://www.facebook.com">
-        Facebook
-    </a>
-    <br>
-    <a href="https://www.youtube.com">
-        YouTube
-    </a>
-    <br>
-        <a href="https://www.twitter.com">
-            Twitter
-        </a>
+     </div>
     
-        <br>
+</div>
+<div class="project" style=" display:flex;padding: 20px; flex-direction: column; align-items: center;" id="Projects">
+    <strong>Projects</strong>
+    <div class="aww">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">ADD Tittle</h5>
+                  <p class="card-text">create new file to made projects and add to this main pages to show here.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">ADD Tittle</h5>
+                  <p class="card-text">create new file to made projects and add to this main pages to show here.</p>
+                  <a href="" class="btn btn-primary">Go Somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <a href="https://www.instagram.com">
-        Instagram
-    </a>
-    <br>
-    <a href="https://www.snapchat.com">
-        Snapchat
-    </a>
-    
-</h1>
-<p>
-    Let's Make Something
-</p>
-<p>
-    Okay Now Let's Make Something
-
-</p>
-
-
-<p>
-    <!-- Strong makes it bold-->
-   <strong> Man, you give so much useful info. </strong> I have wondered why no one was using them in these tutorials videos...thanks for explaining that.
+    </div>
    
-</p>
-<!-- em Is for Emphasis-->
-<em> This is different paragraph</em>
-<p>
-   <b>
-         This is bold text too
-   </b>
-   <i>
-           <p></p> This is italic text too
-   </i>
-   <u>
-         <br>  <u>This is underlined text too </u>
-   </u>
-   <a>
-              <p></p>   <!--This is a link text too -->
-   </a>
-</p>
-<!-- Types of Lists in HTML -->
-<!-- Ordered , Unordered and Descriptive List -->
-<h1> Lists in HTML</h1>
-<h4>An Unordered HTML List</h4>
-
-<ul>
-  <li>January</li>
-  <li>February</li>
-  <li>March</li>
-</ul>  
-
-<h4>An Ordered HTML List</h4>
-
-<ol>
-  <li>January</li>
-  <li>February</li>
-  <li>March</li>
-</ol> 
-
-<h4>A Description HTML List</h4>
-
-<dl>
-  <dt>First month of year </dt>
-  <dd>- January</dd>
-  <dt>Last month of year</dt>
-  <dd>-December</dd>
-</dl>
-
-<!-- Adding Tables in HTML-->
-<!-- Tables are used to store data in Tabular form with the help of rows and columns-->
-<div class="tab">
-    <h2>TD elements define table cells</h2>
-
-    <table style="width:100%">
-      <tr>
-        <td>Emil</td>
-        <td>Tobias</td>
-        <td>Linus</td>
-      </tr>
-    </table>
-    
-    <p>To understand the example better, we have added borders to the table.</p>
-   </div>
-
-   <div>
-    <h2>Symbols in Html</h2>
-    <h4>Example of Mathematical Symbol</h4>
-    <p>The summation symbol: &sum; </p>
-    <p>The partial differential symbol: &part;</p>
-    <p>The element-of symbol: &isin;</p>
-    <P>There are many more!!</p>
-   </div>
-   <div>
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-   </div>
-
-   <!-- Use of classes  in html-->
-<h2> Using classes in HTML</h2>
-<h2>Here the class note is applied on "example"</h2>
-   <h3>My <span class="note">example</span> Heading</h3>
-<p>This is some <span class="note">example</span> text.</p>
 
 
+</div>
+     
+<div class="block" style=" background-color: rgba(44, 41, 41, 0.838); display:flex;padding: 20px; flex-direction: column; align-items: center;" id="footer">
+    <div style="color:white ; display:flex;padding: 20px; flex-direction: column; align-items: center;">
 
-<script type="text/javascript">
-    var number = 0;
-    function Click() {
-        // the value will increase by every click
-        number+=1;
-         // declaring the value of div using a variable
-        document.getElementById("abc").innerHTML = number;
-       
-    };
-</script>
-<p> Now let's learn how to make a counter in html using simple js</p>
-<p> here is a div in which there will be a number which will increase as we will click a buttom</p>
-<!-- Lets give it a id name so we can access its value using getElementbyId -->
-<div ><p id ="abcd"><a id="abc">0</a></p></div>
-<button type = "button" onClick="Click()">Click Me</button>
+        <p>Learn things , make project and add in the project section</p>
+        <p>Thank you for your Contribution!!</p>
+    </div>    
+  
+</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-<!-- Now if we want a secondary link in the folder itself then this is the way-->
-<a href="SECOND PAGE.html">
-    <p>
-        <strong>
-            <p>
-                This is a link to the second page in the file (which is not external)
-            </p>
-        </strong>
-    </p>
-
-    <img src=" https://www.bing.com/th?id=OIP.nI0YocbKuw2038jFv_VDfQHaD4&w=206&h=106&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2">
-
-    <!-- Now I want to add something from my computer an Image of mine-->
-
-  <img src="Image/me.jpeg" alt="It's me">
-
-
- 
-</p>
-
-
-
-
-
-
-
-
-
-    </body>
-
-
-
-
+   
+  </body>
 </html>
