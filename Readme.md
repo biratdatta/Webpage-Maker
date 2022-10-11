@@ -46,7 +46,7 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 **2**. Clone the project, you can use the following command:
 
 ```bash
-git clone https://github.com/<your-github-username>/devcheatsheet
+git clone https://github.com/<your-github-username>/Webpage-Maker
 ```
 
 **3**. Navigate to the project directory
