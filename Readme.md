@@ -122,7 +122,7 @@ Contact me on:- `Baba Yaga#6991` at Discord
 ## 🙏🏽 Support
 
 This project needs a star️ from you. Don't forget to leave a star✨
-
+Follow my Github for content
 <br>
 <br>
 <hr>
