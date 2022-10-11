@@ -1,0 +1,180 @@
+body{
+  background-color: #9f5f80;
+}
+
+.heading{
+  font-size: 4rem;
+  font-family: 'Hanalei Fill',cursive;
+  color: white;
+}
+.dice{
+  border-radius:10%;
+  width:13rem;
+  margin-top: 2rem;
+  float: left;
+}
+.introduction{
+  font-size: 2.5rem;
+  font-family: 'Langar',cursive;
+  color: white;
+}
+.container-fluid{
+  width:50%;
+  text-align: center;
+}
+hr{
+  border-width: 2rem;
+  border-style: dotted none none none;
+  border-color: white;
+
+}
+.player1{
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width:50%;
+  float: left;
+}
+
+.player2{
+    color: white;
+  text-align: center;
+  display: inline-block;
+  width:50%;
+}
+
+.vs{
+  display: inline-block;
+  width:10%;
+  position: absolute;
+  top:25rem;
+  font-family: 'Langar',cursive;
+}
+.h1vs{
+  position: absolute;
+  width:10%;
+  left:53.5rem;
+  bottom: 30rem;
+  font-family: 'Langar',cursive;
+  font-size: 5rem;
+  color: white;
+}
+.zero , .zero1{
+  width:1%;
+  position: relative;
+  left:34.5rem;
+  bottom:3.5rem;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 5px 7px 0px #d1c2d1;
+  -webkit-box-shadow: 14px 11px 19px #666666;
+  -moz-box-shadow: 14px 11px 19px #666666;
+  box-shadow: 14px 11px 19px #666666;
+  font-family: 'Langar',cursive;
+  color: #ffffff;
+  font-size: 60px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #020405;
+  background-image: -webkit-linear-gradient(top, #020405, #e9f0f5);
+  background-image: -moz-linear-gradient(top, #020405, #e9f0f5);
+  background-image: -ms-linear-gradient(top, #020405, #e9f0f5);
+  background-image: -o-linear-gradient(top, #020405, #e9f0f5);
+  background-image: linear-gradient(to bottom, #020405, #e9f0f5);
+  text-decoration: none;
+}
+.button{
+position: relative;
+left:53rem;
+clear:both;
+}
+
+.playbutton{
+  position: relative;
+  left:57rem;
+  top:15rem;
+}
+
+@media screen and (max-width :1562px){
+
+ .playbutton{
+   position: relative;
+   left:30rem;
+
+ }
+ .introduction{
+   font-size: 2rem;
+   font-family: 'Langar',cursive;
+   color: white;
+ }
+
+}
+
+@media screen and (max-width:999px){
+  .heading{
+    font-size: 3.7rem;
+    font-family: 'Hanalei Fill',cursive;
+    color: white;
+  }
+  .introduction{
+    font-size: 1.5rem;
+    font-family: 'Langar',cursive;
+    color: white;
+  }
+}
+
+@media screen and (min-width :1045px) and  (max-width :1100px)
+{
+  .introduction{
+    font-size: 1.3rem;
+    font-family: 'Langar',cursive;
+    color: white;
+  }
+}
+
+@media screen and (min-width :301px) and (max-width :1023px){
+  .introduction{
+    font-size: 1.5rem;
+    font-family: 'Langar',cursive;
+    color: white;
+  }
+  .heading{
+    font-size: 3.2rem;
+    font-family: 'Hanalei Fill',cursive;
+    color: white;
+  }
+  .zero , .zero1{
+    width:1%;
+    position: relative;
+    left:19.9rem;
+    bottom:3.5rem;
+  }
+
+  .button{
+  position: relative;
+  left:24.5rem;
+  }
+
+  .h1vs{
+    position: absolute;
+    width:10%;
+    left:27.5rem;
+    bottom: 80rem;
+    font-family: 'Langar',cursive;
+    font-size: 5rem;
+    color: white;
+  }
+}
