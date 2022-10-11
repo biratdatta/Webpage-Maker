@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Student Enrollment Form</title>
+</head>
+
+<body>
+
+    <div class="Container">
+        <h1>Student Enrollment Form</h1>
+    </div>
+    <div class="main">
+        <div class="left">
+            <form class="enrollment">
+                <label for="Name">Name: </label>
+                <input type="text" id="Name" placeholder="Name" name="Name">
+
+                <label for="Email">Email: </label>
+                <input type="email" id="Email" placeholder="Email" name="Email">
+
+                <label for="website">Website: </label>
+                <input type="text" id="website" placeholder="Link" name="website">
+                 
+
+                <label for="Gender" class="gender">
+                    <p>Gender: </p>
+                    <input type="radio" name="Gender" id="Male" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" id="Female" value="Female">
+                    <label for="Female">Female</label>
+                </label>
+                <label for="Skills" class="skills">
+                    <p>Skills: </p>
+                    <input type="checkbox" id="html" value="HTML">
+                    <label for="html">HTML</label>
+
+                    <input type="checkbox" id="css" value="CSS">
+                    <label for="css">CSS</label>
+
+                    <input type="checkbox" id="Javascript" value="Javascript">
+                    <label for="js">Javascript</label>
+                </label>
+                <div class="btn">
+                    <button type="button" id="btn" class="button">Enroll Student</button>
+                    <button type="reset" class="button" style="background-color:#fa0066" onClick="window.location.href=window.location.href">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="Vertical_line"></div>
+        <div class="right">
+            <h1 class="Enrolled">Enrolled Students</h1>
+            <div class="cards"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
