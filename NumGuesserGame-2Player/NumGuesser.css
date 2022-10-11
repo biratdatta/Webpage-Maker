@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Code&family=Kanit:wght@500;600;700&family=Roboto+Condensed:wght@700&family=Ubuntu+Mono&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+html
+{
+    font-size: 62.5%;
+}
+
+*{
+    margin:0rem;
+    padding:0rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body
+{
+    background-image: url('https://t3.ftcdn.net/jpg/02/71/50/04/360_F_271500423_Ls3YOwFx6DqHy4nUvAV2P0G2UQwFeQaq.jpg');
+    background-repeat: none;
+    background-size: cover;
+    background-position:-4.7rem 0rem;
+}
+h1
+{
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 2.0rem;  
+    color:white;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.player1
+{
+    letter-spacing: -.1rem;
+    padding: 2.0rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.0rem;
+    height:34.0rem;
+    width:30.0rem;
+    border-radius: 1.2rem;
+    border: .2rem solid orange;
+    font-size: 2.2rem;
+}
+
+.player1:hover
+{
+    transform: scale(1.1);
+}
+
+#player1
+{
+    background-color: rgb(251,61,224);
+    margin-left: 9.0rem;
+    box-shadow: 1.0rem 1.0rem 1.0rem rgb(111, 12, 96);
+}
+#player2
+{
+    background-color: rgb(52,196,241);
+    margin-right: 9.0rem;
+    box-shadow: -1.0rem 1.0rem 1.0rem rgb(8, 87, 111);
+}
+
+h3
+{
+    text-align: center;
+    margin-bottom: 4.5rem;
+}
+
+.player1name
+{
+    font-size: 1.8rem;
+    font-style: italic;
+    color: rgb(94, 4, 82);
+    height: 3.0rem;
+    width:20.0rem;
+    border-radius: .6rem;
+    padding: .2rem;
+    border: .2rem solid rgb(57, 57, 227);
+}
+
+.player1guess
+{
+    font-size: 1.8rem;
+    height: 3.0rem;
+    width:6.0rem;
+    border-radius: .6rem;
+    padding: .2rem;
+    padding-left: .5rem;
+    border: .2rem solid rgb(57, 57, 227);
+}
+
+.p1finish
+{
+    width: 10.0rem;
+    height: 4.0rem;
+    margin-top: 2.0rem;
+    text-align: center;
+    border-radius: 1.0rem;
+    font-size: 1.8rem;
+    margin-left: 18.0rem;
+    background-color: black;
+    color: white;
+    margin-bottom:1.5rem;
+}
+
+.p1finish:hover
+{
+    transform: scale(1.2);
+}
+
+img
+{
+    height:21.0rem;
+    width:21.0rem;
+    margin-top: 10.0rem;
+    margin-left:4.0rem;
+    margin-right:4.0rem;
+    margin-bottom: 2.0rem;
+}
+
+img:hover
+{
+   transform: scale(1.1);
+}
+
+#id_winner
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#winner
+{
+    color:white;
+    margin-left:8rem;
+    font-size:4.0rem;
+    margin-top: 2.0rem;
+}
+
+.empty
+{
+    height:20.0rem;
+}
+
+@media (max-width:1095px)
+{
+    html
+    {
+        font-size: 55%;
+    }
+}
+@media (max-width:1030px)
+{
+    html
+    {
+        font-size: 50%;
+    }
+}
+@media (max-width:930px)
+{
+    html
+    {
+        font-size: 45%;
+    }
+}
+@media (max-width:850px)
+{
+    html
+    {
+        font-size: 40%;
+    }
+}
+@media (max-width:750px)
+{
+    html
+    {
+        font-size: 35%;
+    }
+}
+@media (max-width:650px)
+{
+    html
+    {
+        font-size: 30%;
+    }
+}
+@media (max-width:500px)
+{
+    html
+    {
+        font-size: 30%;
+    }
+    .container
+    {
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #player1
+    {
+        margin: auto;
+        margin-top: 100px;
+    }
+    #player2
+    {
+        margin: auto;
+        margin-top: 100px;
+    }
+    body
+    {
+        background-image: rotate(90deg);
+        background-position: -120px;
+    }
+}

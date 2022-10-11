@@ -1,0 +1,165 @@
+.body{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.header{
+    width: 100%;
+    background-color: rgb(61, 191, 211);
+    position: relative;
+    display: flex;
+    height: max-content;
+}
+.logo{
+    display: flex;
+    position: relative;
+    margin-left: 60px;
+    color: white;
+}
+.nav{
+    display: flex;
+    position: relative;
+    margin-left: 230px;
+    padding-top: 10px;
+}
+.nav-item a:hover{
+    color: wheat;
+    border-bottom: 3px solid;
+}
+.nav-list{
+    display: flex;
+    position: relative;
+    list-style: none;
+    font-size: 20px;
+}
+.nav-item{
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.drop-nav{
+    background-color:rgb(61, 191, 211);
+    position: absolute;
+    list-style: none;
+    width: 100px;
+    text-align: left;
+    margin-left: -30px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: none;
+}
+.nav-item:hover .drop-nav{
+    display: block;
+}
+.drop-list{
+    display: block;
+    text-align: left;
+    margin-left: -15px;
+    padding-top: 15px;
+}
+.drop-list a{
+    color: white;
+    font-size: 17px;
+}
+.big-drop-nav{
+    display: none;
+    width: 600px;
+    position: absolute;
+    margin-left: -200px;
+    height: 180px;
+    background-color:rgb(61, 191, 211);
+    padding-left: 20px;
+    padding-top: 25px;
+}
+.drop-nav2{
+    font-size: 20px;
+}
+.nav-item:hover .big-drop-nav{
+    display: flex;
+}
+
+
+.drop-list{
+    font-size: 15px;
+}
+.body{
+        position: relative;
+        display: grid;
+        place-items: center;
+        text-align: left;
+        background-color: rgba(241, 246, 250, 0.951);
+        color: white;
+        width: 90%;
+        padding :10px;
+        margin: auto;
+        font-size: small;
+        margin-top: 10px;
+        border-radius: 2px;
+        margin-bottom: 10px;
+        color: black;
+z-index: -1;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(61, 191, 211) ;
+    position: relative;
+    display: flex;
+    color: white;
+    padding-top: 20px;
+    font-family: sans-serif;
+}
+.footside{
+    position: relative;
+    display: block;
+    padding-left: 245px;
+}
+.footname a{
+    color: white;
+}
+.footer_list{
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin-left: -40px;
+}
+.footer_item{
+    position: relative;
+    display: flex;
+    margin-top: -15px;
+    padding-right: 25px;
+    font-size: 15px;
+}
+.footside2{
+    position: relative;
+    display: block;
+    padding-left: 360px;
+}
+.social{
+    position: relative;
+    display: flex;
+    padding-left: 0px;
+    padding-top: 25px;
+}
+.social_icon{
+    position: relative;
+    background-color: wheat;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    padding-top:5px ;
+}
+.footer_text{
+    font-size: 10px;
+}

@@ -1,13 +1,45 @@
-/* We don't need to add the .css extension here because we are using the .css extension in the link tag */
 
+/* We don't need to add the .css extension here because we are using the .css extension in the link tag */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
 body {
    background-color: bisque;
     color:rgb(233, 45, 45);
     font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
 }
-
-
-
+.intro
+{
+    height: 120vh;
+   
+}
+.logo{
+    color:brown;
+    text-decoration:solid;
+    text-shadow: 4em;
+}
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu li{
+    padding: 35px;
+    list-style: none;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(246, 49, 14);
+}
 
 p{
     color:rgb(0, 0, 0);

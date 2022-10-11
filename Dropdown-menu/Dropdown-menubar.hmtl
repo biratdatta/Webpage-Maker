@@ -1,0 +1,205 @@
+<!Doctype html>
+
+    <head>
+        <title>Dropdown menu</title>
+        <meta charset="UTF-8">
+        <http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width-device-width", initial-scale="1">
+        <link rel="stylesheet" type="text/css" href="Dropdown-menu.css">
+        <link rel="icon" href="icon.png">
+    </head>
+
+    <body>
+    <header class="header">
+        <h1 class="logo">SKILL GAIN</h1>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#">Github Repo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="k">Writing skill</a>
+                    <ul class="drop-nav">
+                        <li class="drop-list">
+                            <a href="#">Story-Writing</a>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Proof-Reading</a>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Ebook-Writing</a>
+                        </li>
+                        <li class="drop-list">
+                            <a href="#">Content-Writing</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Programming Skills</a>
+                    <div class="big-drop-nav">
+                        <ul class="drop-nav2">
+                            <li class="drop-list">
+                                <a href="#">UI/UX designing</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Frontend Development</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Backend Development</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Fullstack Development</a>
+                            </li>
+                        </ul>
+                        <ul class="drop-nav2">
+                            <li class="drop-list">
+                                <a href="#">Data Science</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Ai & Machine language</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Cloud Computing</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Cyber Security</a>
+                            </li>
+                        </ul>
+                        <ul class="drop-nav2">
+                            <li class="drop-list">
+                                <a href="#">Game Development</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Software Development</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Mobile Development</a>
+                            </li>
+                            <li class="drop-list">
+                                <a href="#">Low-code Development</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#">About Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="body">
+            <p class="text">
+                <h2>Hover over "Writing Skill" and "Programming skill" to see the effect</h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Obcaecati repellat, quibusdam suscipit possimus ratione 
+                debitis dolorum deserunt labore temporibus quae enim eius
+                 reiciendis non nostrum dolor explicabo ab! Illum asperiores
+                  alias doloribus quos, voluptate ratione, repudiandae ducimus
+                   tempora expedita inventore non cupiditate nemo harum? Consequatur
+                    laboriosam asperiores neque sed quos modi, eum dolores molestias
+                     pariatur placeat dicta saepe repellendus excepturi minus totam
+                      provident iure sapiente laborum at nihil inventore ab, corrupti
+                       nisi tempore. Ipsa odio impedit ea officia! Illum numquam aut,
+                        nobis itaque laboriosam cum omnis aperiam voluptates reprehenderit,
+                         facere nesciunt eos?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                         nam eligendi. Adipisci mollitia, dignissimos aut vero natus a 
+                         error, ratione, quas ut omnis hic repellendus?
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+                          iure debitis omnis amet fugiat fugit eaque sapiente quis provident 
+                          natus reprehenderit neque, praesentium veniam aut modi illo, fuga
+                           voluptatum. Dolore sed perspiciatis consectetur deleniti officia 
+                           nobis porro, quod id necessitatibus optio, quia in, eveniet sit 
+                           blanditiis. Minima, veritatis. Natus fugiat debitis eveniet ducimus 
+                           inventore sit repudiandae hic eos voluptatibus magni dolore aspernatur 
+                           cumque omnis corporis temporibus exercitationem itaque delectus, ullam 
+                           illo odio corrupti molestias non aliquam illum! Saepe, aliquam! Reiciendis 
+                           odio incidunt fuga in minus ad animi eaque quo quos dolorem soluta, repellat
+                            quae quam temporibus numquam aperiam veritatis ducimus ex explicabo nam 
+                            voluptas. Odit consectetur dolores tempora, aspernatur tenetur at amet.
+                             Sint illum voluptatibus ducimus ipsa mollitia numquam dolorum, aliquid 
+                             magnam. Possimus cupiditate rem eligendi. Enim, explicabo. Mollitia ipsa
+                              debitis facilis dolorum repellendus rem voluptas obcaecati aut ut? Et 
+                              libero ullam illum minima animi, laudantium ex beatae! Rerum voluptatum 
+                              ex qui, nemo optio neque in corrupti. Accusantium, voluptates dolore qui
+                              busdam illo at fugiat et ex qui quae hic maiores officiis doloremque sequi
+                               aspernatur laboriosam ab, ullam repellat pariatur, eligendi itaque velit
+                            illum. Reprehenderit doloremque quod, nam aliquam consequatur quos laudantium
+                             obcaecati alias.
+                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos natus cumque
+                              quisquam porro enim rem fugit ipsa maxime, rerum sit odit voluptate! 
+                               atque alias eum ipsa iusto dolorem, similique voluptates laboriosam, sed
+                               \ tempora labore ad, excepturi eveniet molestiae eligendi! Temporibus vel
+                               id deleniti qui laboriosam pariatur cupiditate quam ut saepe assumenda hic
+                                ab, quae rem adipisci doloribus officiis possimus quod fuga alias enim eaque.
+                                 Corporis possimus iste exercitationem voluptates repellat asperiores mollitia 
+                                 qui minus? Architecto, mollitia suscipit alias ut enim nulla ad blanditiis iusto
+                                 , quo esse molestiae saepe quod id modi quae repellendus cumque quos sint at? 
+                                 Ea consequatur voluptates distinctio? Veniam blanditiis minima perspiciatis 
+                                 vero eius voluptatum exercitationem, magnam assumenda neque magni sapiente 
+                                 quae dignissimos, est nemo delectus vitae iste? Animi eos dicta, nesciunt 
+                                 beatae vel perferendis, impedit tempore labore, obcaecati earum quisquam 
+                                 architecto repellat provident blanditiis quos sint velit recusandae et 
+                                 modi consequatur deserunt distinctio nihil? Natus blanditiis repudiandae 
+                                 beatae voluptates explicabo tempora recusandae inventore, quisquam unde
+                                  praesentium ratione delectus eligendi rerum, excepturi ullam molestiae
+                                   at sed id ut laborum. Molestiae assumenda doloribus eligendi libero modi 
+                                   praesentium officia illo vel esse eveniet culpa dicta, corporis 
+                                iure minima, quisquam voluptatibus itaque pariatur optio voluptas et fuga, porro ex?
+                          Pa    riatur eligendi iste molestias, perspiciatis doloribus quaerat!
+                 At ex provi    dent iure expedita fugiat sunt laudantium?
+            </p>
+    </section>
+    <footer class="footer">
+        <div class="footside">
+            <h1 class="footer_name">
+                <a title="" href="#">
+                    SKILL GAIN
+                </a>
+            </h1>
+            <ul class="footer_list">
+                <li class="footer_item">
+                    <a title="about" href="#">About</a>
+                </li>
+                <li class="footer_item">
+                    <a title="contact" href="#">Contact</a>
+                </li>
+                <li class="footer_item">
+                    <a title="contact" href="#">Support</a>
+                </li>
+                <li class="footer_item">
+                    <a title="terms" href="#">Terms and condition</a>
+                </li>
+            </ul>
+            </ul>
+        </div>
+        <div class="footside2">
+            <div class="social">
+                <div class="social_icon">
+                    <a title="FB" href="#">
+                        <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/facebook-16x16-761599_vlf1xl.png">
+                    </a>
+                </div>
+                <div class="social_icon">
+                    <a title="LI" href="#">
+                        <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/linkedin-16x16-761611_a8dv2c.png">
+                    </a>
+                </div>
+                <div class="social_icon">
+                    <a title="TW" href="">
+                        <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1652302113/samples/food/fa_twitter-16x16-761629_rhy95g.png">
+                    </a>
+                </div>
+                <div class="social_icon">
+                    <a title="GH" href="https://github.com/Slmpire">
+                        <img alt="lo" src="https://res.cloudinary.com/slmedia/image/upload/v1664749375/samples/food/github-16x16-761603_vwximd.png">
+                    </a>
+                </div>
+            </div>
+            <p class="footer_text">
+                Designed by Ogunleye Pelumi (Dev Sioplight)
+            </p>
+        </div>
+    </footer>
+    </body>
+</html>

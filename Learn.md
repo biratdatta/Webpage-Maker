@@ -30,7 +30,59 @@ Preview:<br>
 **bold**
 _italic_
 ~~strikethrough~~
+> Blockquotes
+>> Inside this blockquote
+>> - Blockquote + list
 ```
 **Bold**
 _Italic_
 ~~strikethrough~~
+
+> Blockquotes
+>> Inside this blockquote
+>> - Inside blockquote + list
+
+## Lists
+```html
+<ol>
+    <li>Hola!</li>
+    <li>This is an ordered list</li>
+</ol>
+<ul>
+    <li>This is a list too!</li>
+    <li>But it's unordered!</li>
+</ul>
+```
+<ol>
+    <li>Hola!</li>
+    <li>This is an ordered list</li>
+</ol>
+<ul>
+    <li>This is a list too!</li>
+    <li>But it's unordered!</li>
+</ul>
+
+## Tables
+```html
+| Company     | Revenue     |
+| ----------- | ----------- |
+| Google      | 20 B        |
+| Meta        | 15 B        |
+```
+| Company     | Revenue     |
+| ----------- | ----------- |
+| Google      | 20 B        |
+| Meta        | 15 B        |
+
+## Extras
+```html
+x<sup>2</sup> + 2x + 1
+H<sub>2</sub>O
+Don't ==thread== on me!
+```
+x<sup>2</sup> + 2x + 1 <br>
+H<sub>2</sub>O <br>
+Don't ==thread== on me!
+
+## Credits
+I hope you have enjoyed this brief overview of markdown. If you'd like, check out the author at [@arkanalexei](https://github.com/arkanalexei)
