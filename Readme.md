@@ -44,6 +44,8 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 > MongoDB basics.
 - [Django Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/django%20cheatsheat.md)
 > Covers the basics on Django framework.
+- [Tailwind CSS Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/tailwind/Tailwind%20CSS.md)
+> Covers the basics on Tailwind CSS
 
 ## Want to contribute?
 - Take a look at [`contributing ideas.`](Contributionidea.md).
