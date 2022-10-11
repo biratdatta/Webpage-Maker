@@ -17,8 +17,9 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 - [JS Notes](https://github.com/biratdatta/Webpage-Maker/blob/master/JS%20Personal%20Notes.txt)
 > Personal notes for getting started with Javascript.
 - [Java Fundamentals Cheat Sheet](https://github.com/biratdatta/Webpage-Maker/blob/master/JavaFundamentalCheatsheet.md)
-- [Tailwind CSS Cheat Sheet](https://github.com/biratdatta/Webpage-Maker/blob/master/JavaFundamentalCheatsheet.md)
 > Covers notes for getting started with Java.
+- [Tailwind CSS Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/tailwind/Tailwind%20CSS.md)
+> Covers the basics on Tailwind CSS
  
 ## Contributing Guidelines:
 - [Contribution Ideas](https://github.com/nayanmapara/Webpage-Maker/blob/master/Contributionidea.md)
