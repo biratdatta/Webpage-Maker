@@ -1,0 +1,67 @@
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    overflow: hidden;
+}
+
+
+
+a:hover{
+    background-color: inherit;
+    color: blue;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+header a{
+    color: black;
+    margin: 30px 40px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+}
+
+.grid_container {
+    display: grid;
+    gap: 10px;
+    width: 60%;
+    height: 400px;
+    margin: 120px;
+    grid-template-areas: "red red yellow"
+                         "green blue blue"
+                         "green lightskyblue lightskyblue";
+    grid-template-columns: 40% 1fr 40%;
+    grid-template-rows: 45% 28% 30%;
+}
+
+.red{
+    background-color: rgb(241, 86, 25);
+    grid-area: red;
+}
+
+.yellow{
+    background-color: orange;
+    grid-area: yellow;
+}
+
+.green{
+    background-color: rgb(13, 170, 13);
+    grid-area: green;
+}
+
+.blue{
+    background-color: rgb(88, 190, 230);
+    grid-area: blue;
+}
+
+.blue2{
+    background-color: rgb(91, 184, 242);
+    grid-area: lightskyblue;
+}
