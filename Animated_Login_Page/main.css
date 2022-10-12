@@ -5,7 +5,9 @@ html {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(#141e30, #243b55);
+    background-image: url("images.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .login-box {
@@ -168,3 +170,37 @@ html {
     }
   }
   
+
+.navbar{
+    background-color: black;
+    border-radius: 30px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float:left;
+    list-style: none; 
+    margin: 13px 20px;
+    
+}
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+.navbar li a:hover{
+    color: rgb(189, 223, 19)
+}
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+.navbar input{
+    border: 2px solid black;
+    border-radius: 14px;
+    padding: 3px 17px;
+    width: 129px;
+}
