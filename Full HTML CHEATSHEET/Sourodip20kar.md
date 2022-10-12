@@ -386,3 +386,19 @@ Displays the symbol `∉` (Not element of)
 `&#8721`
 Displays the symbol `∑` (Summation)
   
+# Emojis in HTML
+ 
+  First one is the emoji and 2nd one is the code of the following
+ 
+    🗻	&#128507;	
+    🗼	&#128508;	
+    🗽	&#128509;	
+    🗾	&#128510;	  
+    🗿	&#128511;	
+    😀	&#128512;	
+    😁	&#128513;	
+    😂	&#128514;	
+    😃	&#128515;	
+    😄	&#128516;	
+    😅	&#128517;
+  
