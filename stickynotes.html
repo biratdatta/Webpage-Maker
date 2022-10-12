@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>stickynotes</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style type="text/css">
+	@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+
+* { box-sizing:border-box; }
+
+body { 
+  background-image:url(images/bg1.jpg); 
+     margin:30px; 
+     }
+
+#create, textarea  { 
+
+
+  float:left; 
+  padding:25px 25px 40px;
+  margin:0 20px 20px 0;
+  width:250px;
+  height:250px; 
+}
+
+#create {
+  user-select:none;
+  padding:20px; 
+  border-radius:20px;
+  text-align:center; 
+  border:15px solid rgba(0,0,0,0.1); 
+  cursor:pointer;
+  color:rgba(0,0,0,0.1);
+  font:220px "Helvetica", sans-serif;
+  line-height:185px;
+}
+
+#create:hover { border-color:rgba(0,0,0,0.7); color:rgba(0,0,0,0.7); }
+
+textarea {
+  font:20px 'Gloria Hallelujah', cursive; 
+  line-height:1.5;
+  border:0;
+  border-radius:3px;
+  background: linear-gradient(#F9EFAF, #F7E98D);
+  box-shadow:0 4px 6px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition:box-shadow 0.5s ease;
+  font-smoothing:subpixel-antialiased;
+  max-width:520px;
+  max-height:250px;
+}
+textarea:hover { box-shadow:0 5px 8px rgba(0,0,0,0.15); }
+textarea:focus { box-shadow:0 5px 12px rgba(0,0,0,0.2); outline:none; }
+</style>
+	
+</head>
+<body>
+<textarea>This is a sticky note you can type and edit.</textarea>
+
+<div id="create">+</div> 
+
+
+<script type="text/javascript">
+	$("#create").click(function() {
+  $(this).before("<textarea></textarea>");
+});
+</script>
+	
+</script>
+</body>
+</html>
