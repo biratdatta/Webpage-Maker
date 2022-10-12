@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="contact-title">
+        <h1>Hello World!</h1>
+        <p>We are always ready to recognize your Feedbacks and Questions.</p>
+    </div>
+
+    <div class="contact-form">
+        <form id="contact-form" method="post" action="contact-form-handler.php">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required>
+            <br>
+            <textarea name="massage" class="form-control" placeholder="massage" row="4" required>
+            </textarea><br>
+            <input type="submit" class="form-control submit" value="Send Massage">
+        </form>
+    </div>
+</body>
+</html>
