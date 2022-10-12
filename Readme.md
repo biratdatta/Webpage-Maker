@@ -18,18 +18,26 @@
 I have a very Easy Project for you to work on. My Repo is about documenting HTML, and CSS, and you can add your tricks to that and get it done after reviewing [Webpage-Maker](https://github.com/biratdatta/Webpage-Maker).
 
 ## Let's get started (Cheatsheets):
-- [Learn](https://github.com/nayanmapara/Webpage-Maker/blob/master/Learn.md)
-> Covers the basic on HTML to get started with web.
-- [XML Cheat Sheet](https://github.com/nayanmapara/Webpage-Maker/blob/master/XMl%20CheatSheet.md)
-> Covers the basic on XML.
-- [CSS Cheat Sheet](https://github.com/nayanmapara/Webpage-Maker/blob/master/CSS%20Cheatsheet.md)
-> Covers the basic on CSS to get started with web design.
-- [JS Notes](https://github.com/biratdatta/Webpage-Maker/blob/master/JS%20Personal%20Notes.txt)
-> Personal notes for getting started with Javascript.
-- [Java Fundamentals Cheat Sheet](https://github.com/biratdatta/Webpage-Maker/blob/master/JavaFundamentalCheatsheet.md)
-> Covers notes for getting started with Java.
+- [MySQL Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/MYSQL%20Cheatsheet.md)
+> Covers the basics on MySQL.
+- [NPM Cheatsheat](https://github.com/biratdatta/Webpage-Maker/blob/master/NPM%20Cheat%20Sheet.md)
+> Covers the basics on NPM.
+- [Complete HTML+CSS Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Complete%20%5BHTML%20%2B%20CSS%5D%20CheatSheet.txt)
+> Covers the HTML+CSS complete package
+- [jQuery Cheatsheet](https://github.com/biratdatta/Webpage-Maker/tree/master/jQuery%20Cheat%20sheet)
+> Covers the basics on jQuery.
+- [Git Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Git%20CheatSheet/gitCheatSheet.md)
+> Covers the basics on Git.
+- [React-js Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/React%20Js%20Cheatsheet/reactjs_cheatsheet.md)
+> Covers the basics on React-js.
+- [MongoDB Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/Mongodb%20Cheatsheet/mongodb_cheat_sheet.md)
+> MongoDB basics.
+- [Django Cheatsheet](https://github.com/biratdatta/Webpage-Maker/blob/master/django%20cheatsheat.md)
+> Covers the basics on Django framework.
+- [Tailwind CSS Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/tailwind/Tailwind%20CSS.md)
+> Covers the basics on Tailwind CSS
 
-ROADMAPS FOR WEB DEVELOPMENT
+# ROADMAPS FOR WEB DEVELOPMENT
 
 - [Frontend Roadmap](https://roadmap.sh/frontend)
 - [Backend Roadmap](https://roadmap.sh/backend)
@@ -50,6 +58,56 @@ ROADMAPS FOR WEB DEVELOPMENT
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
 
+## 🛠️ Installation Steps
+
+**1**. [Fork](https://github.com/biratdatta/Webpage-Maker) the project. Click on the <a href="https://github.com/biratdatta/Webpage-Maker/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="15" width="15"></a> icon in the top right to get started
+
+
+**2**. Clone the project, you can use the following command:
+
+```bash
+git clone https://github.com/<your-github-username>/Webpage-Maker
+```
+
+**3**. Navigate to the project directory
+
+```bash
+cd Webpage-Maker
+```
+## 🥂 After making a change
+
+**1**. Create a new branch
+
+```bash
+git checkout -b YourBranchName
+```
+
+**2**. Add it to staging area
+
+
+```bash
+git add <path to the file you worked on>
+```
+
+**3**. Commit your changes with
+
+```bash
+git cz
+```
+
+**4**. Push your changes
+
+```bash
+git push
+```
+
+## 👩🏽‍💻 Contributing
+
+- Contributions make the open source community such an amazing place to learn, inspire, and create.
+- Any contributions you make are greatly appreciated.
+- Check out our [contribution guidelines](/CONTRIBUTING.md) for more information.
+
+
 ## Want to contribute?
 - Take a look at [`contributing ideas.`](Contributionidea.md).
 - Take a look at [`contributing guidelines`](CONTRIBUTING.md).
@@ -60,12 +118,17 @@ ROADMAPS FOR WEB DEVELOPMENT
 For the Hacktoberfest you can raise an issue on what you want to contribute and I will assign it for you. 
 Contact me on:- `Baba Yaga#6991` at Discord
 
-## Code of Conduct:
+## Code of Conduct:r
+- [Code of Conduct](https://github.com/nayanmapara/Webpage-Maker/blob/master/CODE_OF_CONDUCT.md)
+----
+
 - [Code of Conduct](CODE_OF_CONDUCT.md)
+
 
 ## Contributors
 
 **Thanks goes to these wonderful people ❤️**
+
 
 <br/>
 <div align="center">
@@ -74,10 +137,15 @@ Contact me on:- `Baba Yaga#6991` at Discord
 </a>
 </div>
 
+
+
+## 🙏🏽 Support
+
+This project needs a star️ from you. Don't forget to leave a star✨
+Follow my Github for content
 <br>
 <br>
 <hr>
 <h6 align="center">© Webpage Maker 2022 
 <br>
 All Rights Reserved</h6>
-
