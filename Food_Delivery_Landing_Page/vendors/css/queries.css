@@ -1,0 +1,150 @@
+/**big tablets 1200px**/
+@media screen and (max-width: 1200px) {
+    .hero-text-box {
+        
+        width:100%;
+        padding:0 2%;
+      }
+      .row{
+        padding: 0 2%;
+      }
+      .steps{
+        margin-top: 23em;
+    }
+}
+/**Small tablets to big tablets from 768px to 1023px**/
+@media screen and (max-width: 1023px) {
+    .steps{
+        margin-top: 370px;
+    }
+    .long-copy{
+        width:80%;
+        margin-left: 10%;
+    }
+    body{
+        font-size:18px;
+    }
+    section{
+        padding:60px 0;
+    }
+    .steps-box{
+        margin-top:10px;
+    }
+    .steps-box:last-child{
+        margin-top:10px;
+    }
+    .works-step{
+        margin-bottom: 40px;
+    }
+    .works-step:last-of-type{
+        margin-bottom: 60px;
+    }
+    .app-screen{
+        width:50%;
+    }
+    .icon-small{
+        width:70px;
+        margin-right: 5px;
+    }
+    .city-feature{
+        font-size:90%;
+    }
+    .plan-box{
+        width: 100%;
+        margin-left: 0;
+    }
+    .plan-price{
+        font-size: 250%;
+    }
+    .contact-from{
+        width: 80%;
+    }
+    
+}
+/**Small Phones to small tablets from 481px to 767px**/
+@media screen and (max-width: 767px) {
+    body{
+        font-size: 16px;
+    }
+    section{
+        padding: 30px 0px;
+    }
+    .steps{
+        margin-top: 200px;
+    }
+    .row,
+    .hero-text-box{
+        padding:0 4%;
+    }
+    .col{
+        width:100%;
+        margin:0 0 4%;
+    }
+    .main-nav{
+        display: none;
+    }
+    .app-screen{
+        width:40%;
+    }
+    .steps-box{
+        text-align: center;
+    }
+    .works-step div{
+        height:40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        text-align: center;
+    }
+    .works-step :last-of-type{
+        margin-left: -60px;
+    }
+    .works-step{
+        margin-bottom: 40px;
+        text-align: center;
+        margin-left: 20px;
+    }
+   .meals-showcase{
+    margin-top: -35em;
+    transform: scale(1.15);
+   }
+   input[type="submit"]{
+    margin: auto 0;
+    margin-left: 70px;
+}
+    
+}
+/**Small Phones from 0 to 480px**/
+@media screen and (max-width: 480px) {
+    section{
+        padding: 25px 0;
+    }
+    .steps{
+        margin-top: 170px;
+    }
+    .contact-from{
+        width: 100%;
+    }
+    input[type="submit"]{
+        margin-left: 40px;
+    }
+    .works-step div{
+        height:40px;
+        width: 40px;
+        padding: 4px;
+        font-size: 120%;
+        text-align: center;
+    }
+    .works-step :last-of-type{
+        margin-left: -60px;
+    }
+    .works-step{
+        margin-bottom: 40px;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .meals-showcase{
+        margin-top: -35em;
+        transform: scale(1.15);
+       }
+}
