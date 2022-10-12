@@ -70,6 +70,14 @@ Sets font color (should use CSS instead)
 `<font face=?> </font>`
 Defines the font used (should use CSS instead)
   
+ ## Media Tag
+  
+`<video controls><source src="abcd.mp4"></video>`
+For adding Video
+  
+`<audio controls><source Src="abcd.mp3"></audio>`
+For adding Audio 
+  
 ## Links
   
 `<a href="URL">clickable text</a>`

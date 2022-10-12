@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar page</title>
+</head>
+<style>
+    .navBar {
+        background-color: rgb(0, 0, 0);
+        border-radius: 25px;
+    }
+
+    .clist {
+        list-style: none;
+    }
+
+    .navBar ul {
+        overflow: auto;
+    }
+
+    .navBar li {
+        float: left;
+        padding: 9px 11px;
+    }
+
+    .navBar li a {
+        position: relative;
+        color: rgb(114, 228, 249);
+        text-decoration: none;
+        margin: 1px;
+    }
+
+    .navBar li a:hover {
+        display: flex; 
+        color: rgb(255, 255, 255)
+    }
+
+    .navBar li a:after {
+        content: ""; 
+        position: absolute;
+        width: 0%;
+        height: 2px; 
+        left: 0;
+        bottom: -5px;
+        background-color: #ab00a3; 
+        transition: 0.3s;
+    }
+    
+    .navBar li a:hover:after {
+        width: 100%;
+    }
+
+    .search {
+        float: right;
+        border: 2px soid rgb(7, 7, 122);
+    }
+
+    .navBar input {
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        margin:5px 20px;
+        padding: 6px 8px;
+    }
+
+    input{
+        border: none;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <ul class="clist">
+                <li><a href="">Home</a></li>
+                <li><a href="">Menue</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contect Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
