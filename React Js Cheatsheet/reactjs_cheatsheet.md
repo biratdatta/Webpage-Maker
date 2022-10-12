@@ -684,3 +684,127 @@ function userReducer(state = initialState, action) {
  }
 }
 ```
+
+## 3- Hooks
+### what are hooks? 
+
+Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. They're what help you maintain the state functions in a functional component and provide more versitility than the traditional life-cycle methods of the class components
+
+### Diffrent types of hooks 
+- the State Hook: help you store data
+- Using the Effect Hook: help you run things if and when the state data changes
+
+#### State Hooks 
+The most basic of the state hooks is the *useState* hook 
+```
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+which as the name suggests does help you store a variable in a state that persists.
+when you compare the same code in class component counterpart you can see how much boilerplate code is reduced...
+
+```
+// class component example
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+```
+
+
+#### Effect hooks
+
+The Effect Hook lets you perform side effects in function components:
+```
+//example 
+import React, { useState, useEffect } from 'react';
+
+function Example() {
+  const [count, setCount] = useState(0);
+
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+This snippet is based on the counter example from the previous page, but we added a new feature to it: we set the document title to a custom message including the number of clicks.
+
+Data fetching, setting up a subscription, and manually changing the DOM in React components are all examples of side effects. Whether or not you’re used to calling these operations “side effects” (or just “effects”), you’ve likely performed them in your components before.
+
+There are two common kinds of side effects in React components: those that don’t require cleanup, and those that do. Let’s look at this distinction in more detail.
+
+- Effects Without Cleanup
+Sometimes, we want to run some additional code after React has updated the DOM. Network requests, manual DOM mutations, and logging are common examples of effects that don’t require a cleanup. We say that because we can run them and immediately forget about them. Let’s compare how classes and Hooks let us express such side effects.
+
+- Example Using Classes
+In React class components, the render method itself shouldn’t cause side effects. It would be too early — we typically want to perform our effects after React has updated the DOM. 
+This is why in React classes, we put side effects into componentDidMount and componentDidUpdate. Coming back to our example, here is a React counter class component that updates the document title right after React makes changes to the DOM:
+```
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+  }
+
+  componentDidMount() {
+    document.title = `You clicked ${this.state.count} times`;
+  }
+  componentDidUpdate() {
+    document.title = `You clicked ${this.state.count} times`;
+  }
+
+  render() {
+    return (
+      <div>
+        <p>You clicked {this.state.count} times</p>
+        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
+          Click me
+        </button>
+      </div>
+    );
+  }
+}
+```
