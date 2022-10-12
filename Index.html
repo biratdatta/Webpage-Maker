@@ -209,9 +209,25 @@
 
 
     </div>
+    <div class="parallax">
+    <div><h2>THIS IS PARALLAX</h2></div>
+    <div><p>Parallax scrolling is a web site trend where the background content (i.e. an image) is moved at a different speed than the foreground content while scrolling. Click on the links below to see the difference between a website with and without parallax scrolling.
+        <h3>-W3 Schools</h3>
 
 
 
+    </h2></div>
+    <div><h2>DIV 3</h2></div>
+    <div><h2>DIV 4</h2></div>
+</div>
+<script>
+    const parallax = document.getElementsByClassName("parallax");
+
+    window.addEventListener("scroll", function(){
+      const offset = window.pageYOffset;  
+      parallax.style.backgroundPositionY=offset * 1 + "px";
+    })
+</script>
 </body>
 
 
