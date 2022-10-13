@@ -515,6 +515,14 @@ path('logout/', LoginView.as_view(), name='logout')
 # Include a link in a template
 <a> href="{% url 'logout' %}">Logout</a>
 
+# Comment in template
+{% comment %}
+    <p> lorem text </p>
+{% endcomment %}
+
+# Displays the current date
+{% now "SHORT_DATETIME_FORMAT" %}
+
 # After link is execute, the user will be logout and redirect to LOGOUT_REDIRECT_URL specified in your settings.py 
 Authentification: SignupView
 # Create a SignupView (that view is not created by default)
