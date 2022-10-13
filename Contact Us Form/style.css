@@ -5,7 +5,7 @@
 
 body{
     /* background-color: rgb(241, 241, 238); */
-    background-color: #EEEEEE;
+    background-color: #f0de7a;
     border: 2px solid #576F72;
     margin:  0% 30%   ; /* 0px 400px;  */
     padding: 10px;
@@ -14,6 +14,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* text-align: center; */
     /* justify-content: center; */
+    font-weight: 600;
 }
 
 .heading{
@@ -58,10 +59,11 @@ input[type="submit"]{
     width:100px;
     cursor: pointer;
     text-align: center;
+    font-weight: 600;
 }
 
 input[type="submit"]:hover{
-    background-color:grey ;
+    background-color:rgb(88, 98, 239) ;
     border-color: black;
     border-style: solid;
     color: white;
