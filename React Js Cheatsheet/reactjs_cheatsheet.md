@@ -808,3 +808,31 @@ class Example extends React.Component {
   }
 }
 ```
+## React Hook - useContext
+useContext is a React Hook that lets you read and subscribe to context from your component. 
+```javascript
+const value = useContext(SomeContext)
+```
+Call useContext at the top level of your component to read and subscribe to context.
+```javascript
+import { useContext } from 'react';
+
+function Button() {
+  const theme = useContext(ThemeContext);
+  // ...
+```
+<b>Usage</b>:<br>
+To pass context to a Button, wrap it or one of its parent components into the corresponding context provider:<br>
+```javascript
+function MyPage() {
+    return (
+      <ThemeContext.Provider value="dark">
+        <Form />
+      </ThemeContext.Provider>
+    );
+}
+
+function Form() {
+  // ... renders buttons inside ...
+}
+```
