@@ -57,7 +57,6 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
-=======
 
 ## 🛠️ Installation Steps
 
@@ -119,9 +118,7 @@ git push
 For the Hacktoberfest you can raise an issue on what you want to contribute and I will assign it for you. 
 Contact me on:- `Baba Yaga#6991` at Discord
 
-## Code of Conduct:r
-- [Code of Conduct](https://github.com/nayanmapara/Webpage-Maker/blob/master/CODE_OF_CONDUCT.md)
-----
+## Code of Conduct
 
 - [Code of Conduct](CODE_OF_CONDUCT.md)
 
