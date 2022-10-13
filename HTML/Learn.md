@@ -74,6 +74,25 @@ _Italic_
 | Google      | 20 B        |
 | Meta        | 15 B        |
 
+
+## Forms
+
+`<form>` element is used to define a form.
+
+```html
+<form>
+  <!--form elements like input select etc-->
+</form>
+```
+
+```html
+ <form >
+   ID : <input type = "text" name = "user-id" /> <br> <!-- Single line text input-->
+   Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
+ </form>
+```
+
+
 ## Extras
 ```html
 x<sup>2</sup> + 2x + 1
