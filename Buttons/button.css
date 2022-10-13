@@ -31,6 +31,45 @@ button {
 }
 /* layout code end */
 
+.btn {
+  padding: 15px 40px;
+  font-size: 28px;
+  border: none;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  margin: 8px 16px;
+  transition: 0.3s ease;
+  text-align: center;
+  width: 200px;
+  height: 55px;
+  font-size: 16px;
+  display: block;
+  margin: 25px;
+}
+
+.btn-round {
+  border-radius: 8px;
+}
+
+
+
+.b-level-1.b-type-4 {
+  border-radius: 50px;
+  padding: 15px 50px;
+  background: #dd2476;
+}
+
+.b-level-1.b-type-4:hover {
+  border: 2px solid #dd2476;
+  background: transparent;
+  color: #dd2476;
+}
+
+
+
+
+
 .btn1{
   border: 2px solid orange;
   color: orange;
