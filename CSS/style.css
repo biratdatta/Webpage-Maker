@@ -141,29 +141,3 @@
         padding: 8px 24px;
         border-radius: 35%;
     }
-
-    /* .parallax>div:nth-child(1){
-        background:url(/Image/div1_image.jpg) ;
-        background-size: cover;
-        color: #f6f6f6;
-
-    } */
-
-    .parallax>div:nth-child(2){
-        background-color:rgb(35, 206, 152);
-        /* background-size: cover; */
-
-    }
-
-    .parallax>div:nth-child(3){
-        height: 400px;
-        background:url(/Image/div3_img.png) ;
-        background-size: cover;
-        color: #f6f6f6;
-        background-attachment: fixed;
-    }
-    .parallax>div:nth-child(4){
-        background-color:rgb(70, 163, 230) ;
-        /* background-size: cover; */
-
-    }
