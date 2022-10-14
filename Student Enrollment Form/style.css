@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgba(246, 248, 245, 0.904);
+}
+
+.Container>h1 {
+  text-align: center;
+  margin: 20px 0 20px 0;
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+.enrollment {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+  padding: 10px;
+}
+
+.enrollment>input {
+  padding: 10px;
+  margin: 19px 10px;
+  border-radius: 95px;
+  
+  border-style: solid;
+  border-color: black;
+  
+}
+
+label {
+  font-size: 18px;
+}
+
+.name {
+  display: flex;
+}
+
+
+
+
+
+.gender, .skills {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+p {
+  margin-right: 10px;
+}
+
+input[type=radio], input[ type=checkbox] {
+  transform: scale(1.3);
+  margin: 10px 10px;
+}
+
+.skills>label, .gender>label {
+  padding: 0px 10px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 75px;
+  margin: 10px 20px;
+  width: 25%;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  background: rgb(9, 119, 221);
+}
+
+.button:active {
+  transform: translateY(4px);
+}
+
+.main {
+  display: flex;
+}
+
+.left {
+  width: 50%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.Vertical_line {
+  border-left: 4px solid rgb(15, 17, 16);
+}
+
+.Enrolled {
+  margin-top: 2rem;
+  font-family: sans-serif;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border: 2px solid rgb(14, 13, 13);
+  padding: 20px 30px;
+  text-align: center;
+  background-color: rgb(253, 245, 228);
+}
+
+
+
+.title {
+  font-size: 20px;
+  margin: 7px;
+}
+
+.text {
+  margin: 10px;
+}
