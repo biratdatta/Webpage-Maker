@@ -13,7 +13,7 @@ Start a new Django project
 ~$  deactivate
 
 # Install django 
-~$ pip install django~=3.1.0 
+~$ pip install django=3.1.0 
 
 # New django project (from project_name folder)
 ~$  django-admin startproject config .
@@ -42,8 +42,8 @@ Other commands
 ~$ python manage.py shell
 
 # example of code to run in the shell:
- >>> from app_name.models import User
- >>> user1 = User.objects.first()
+ > from app_name.models import User
+ > user1 = User.objects.first()
 
 # Prepare static folders for production
 $ python manage.py collectstatic
@@ -80,7 +80,7 @@ STATICFILES_DIRS = [ BASE_DIR / 'static' ]
 STATIC_ROOT = 'static_root'
 
 # To use PostgresSQL
-# pip install psycopg2
+> pip install psycopg2
 # settings.py
 DATABASE = {
     'default': {
