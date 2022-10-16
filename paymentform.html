@@ -1,0 +1,53 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <script src="https://kit.fontawesome.com/f40480f317.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="paymentform.css">
+</head>
+<body>
+          
+    <div class="container">
+    <form action="">
+       
+      
+          <h1 class="main_heading" >  <i class="fa-regular fa-credit-card"></i>  Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <p>Name: * <input placeholder="Nandini Trivedi" type="text"name="name" required></p>
+        <fieldset>
+        <p>
+            Male <input type="radio" name="gender" id="male">
+            Female <input type="radio" name="gender" id="female">
+        </p>
+    </fieldset>
+        <p>Address: <textarea placeholder="A-228 vaishali nagar ,jaipur" name="address" id="address" cols="100" rows="8"></textarea></p>
+       <p>Email: <input placeholder="nandinitrivedi.jp@gmail.com" type="email" name="email" id="email"></p>
+       <p>Pincode: <input placeholder="302021" type="number" name="pincode" id="pincode"></p>
+
+       <hr>
+
+       <h2>Payment Information</h2>
+       <p>Card Type:
+           <select name="card_type" id="card_type" required>
+           <option value="">--Select a Card Type *--</option>
+           <option value="visa">Visa</option>
+           <option value="rupay">rupay</option>
+           <option value="paytm">paytm</option>
+        </select>
+       </p>
+       <p>
+           Card Number *<input placeholder="2222-XXXX-XXXX" type="number" name="card_number" id="card_number" required>
+       </p>
+<p>
+     Exp Date *: <input type="date" name="exp_date" id="exp_date" required>
+</p>
+<p>CVV * <input placeholder="XXX" type="password" name="cvv" id="cvv" required></p>
+<input type="submit" value="Pay Now">
+    </form>
+</div>
+</body>
+</html>
