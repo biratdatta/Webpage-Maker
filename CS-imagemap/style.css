@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(31, 24, 55);
+    color: yellow;
+}
+div {
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px rgb(253, 0, 232);
+    display: flex;
+    align-items: center;
+}
+h1,h2,pre {
+    color: yellow;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
