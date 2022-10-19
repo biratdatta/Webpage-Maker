@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="output">
+            <div id="gradient"></div>
+            <div class="colors">
+                <input type="color" id="color-a" value="#42b7ff" />
+                <input type="color" id="color-b" value="#151fe0" />
+            </div>
+            <div class="buttons">
+                <button onclick="setDirection('to top', this)">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button class="active" onclick="setDirection('to bottom', this)">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button onclick="setDirection('to right', this)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="setDirection('to left', this)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to top right', this)">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button  class="rotate-icon" onclick="setDirection('to bottom left', this)">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to bottom right', this)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to top left', this)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+            <button id="submit" onclick="generateCode()">Generate</button>
+            <div class="code-output">
+            <input type="text" id="code" readonly>
+            <button id="copy" onclick="copyText()"><i class="fas fa-copy"></i></button>
+        </div>
+        </div>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+
+</html>

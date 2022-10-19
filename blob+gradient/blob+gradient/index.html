@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blob.makerr</title>
+
+    <link rel="stylesheet" href="style.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="output">
+            <!-- contain the blob -->
+            <!--  basic options -->
+            <div id="blob"></div>
+
+            <div class="dimensions">
+                <div>
+                    <label for="blob-height">
+                        Height
+                    </label>
+                    <input type="number" value="200" id="blob-height">
+                </div>
+                <div>
+                    <label for="blob-width">
+                        Width
+                    </label>
+                    <input type="number" value="200" id="blob-width">
+                </div>
+            </div>
+
+            <div class="sliders">
+                <input type="range" value="30">
+                <input type="range" value="80">
+                <input type="range" value="60">
+                <input type="range" value="40">
+            </div>
+            <div class="code-gen-copy">
+                <input type="text" id="css-code" readonly>
+                <button class="copy"><i class="fas fa-copy"></i></button>
+            </div>
+
+            <h2>entire css for your blob...</h2>
+            <div class="code-output">
+                <textarea name="blobcode" id="blob-code" cols="65" rows="5" readonly></textarea>
+                <!-- <input type="text" id="blob-code" readonly> -->
+                <button class="copy"><i class="fas fa-copy"></i></button>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="wrapper" id="right">
+        <div class="output">
+            <h1>change gradient</h1>
+            <div class="colors">
+                
+                <input type="color" id="color-a" value="#07254d" />
+                <input type="color" id="color-b" value="#24a0e7" />
+            </div>
+            <div class="buttons">
+                <button onclick="setDirection('to top', this)">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button class="active" onclick="setDirection('to bottom', this)">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button onclick="setDirection('to right', this)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button onclick="setDirection('to left', this)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to top right', this)">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to bottom left', this)">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to bottom right', this)">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="rotate-icon" onclick="setDirection('to top left', this)">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+
+            <p class="txt">click on Generate to get your code</p>
+
+            <div class="code-output">
+                <button id="submit" onclick="generateCode()">Generate</button>
+                <input type="text" id="gradient-code" placeholder="gradient css is provided here" readonly>
+                <button class="copy" onclick="copyText()"><i class="fas fa-copy"></i></button>
+            </div>
+        </div>
+
+        <div class="output">
+            <h1>add border</h1>
+            <div class="colors">
+                
+                <input type="color" id="color-border" value="#07254d" />
+                <input type="number" value="0" id="blob-border-width">
+            </div>
+            
+
+            <p class="txt">click on Generate to get your code</p>
+
+            <div class="code-output">
+                <button id="submit" onclick="generateBorder()">Generate</button>
+                <input type="text" id="border-code" placeholder="border css is provided here" readonly>
+                <button class="copy" onclick="copyText()"><i class="fas fa-copy"></i></button>
+            </div>
+        </div>
+
+
+        <!-- <div class="output">
+            <h1>add animation</h1>
+            <div class="colors">
+                
+                <input type="color" id="color-border" value="#07254d" />
+                <input type="number" value="0" id="blob-border-width">
+            </div>
+            
+
+            <p class="txt">click on Generate to get your code</p>
+
+            <div class="code-output">
+                <button id="submit" onclick="generateCode()">Generate</button>
+                <input type="text" id="gradient-code" placeholder="border css is provided here" readonly>
+                <button class="copy" onclick="copyText()"><i class="fas fa-copy"></i></button>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

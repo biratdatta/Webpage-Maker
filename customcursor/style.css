@@ -1,0 +1,31 @@
+body
+{
+    cursor:none;
+}
+
+.cursor-shape{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+position: absolute;
+border: 3px solid rgb(221, 217, 217);
+pointer-events: none;
+transition-duration:100ms ;
+transition-timing-function: ease-out;
+}
+
+.cursor-shape.click::before{
+    animation: click 0.5s ease-in-out forwards;
+}
+
+@keyframes click {
+    0%{
+        opacity: 1;
+    transform: translate(-50% , -50%) scale(1);      
+    }
+    100%{
+        opacity: 0;
+    transform: translate(-50% , -50%) scale(3);      
+        
+    }
+}
