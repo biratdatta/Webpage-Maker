@@ -1,0 +1,45 @@
+body{
+    display:flex;
+    background: url(../assets/atm.jpg);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+}
+
+
+.container{
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 2rem;
+    font-weight: 500;
+    box-shadow: 0 0 5px 2px;
+    background-color: white;
+    width: 30%;
+}
+
+
+.pr{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: white;
+
+}
+
+.image{
+    width: 40px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
