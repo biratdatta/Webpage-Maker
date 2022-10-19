@@ -37,16 +37,26 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 - [Tailwind CSS Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/tailwind/Tailwind%20CSS.md)
 > Covers the basics on Tailwind CSS
 
-# ROADMAPS FOR WEB DEVELOPMENT IN ROADMAP.SH  👇
+# ROADMAPS FOR WEB DEVELOPMENT
 
-<p align="center">
-    <a href="https://roadmap.sh/">
-<img src="https://i.imgur.com/jy8Mrgg.png" alt=" forks"/>
-</p>
-
-### Various mind maps, which will take you from scratch to a development.
-
-<hr>
+- [Frontend Roadmap](https://roadmap.sh/frontend)
+- [Backend Roadmap](https://roadmap.sh/backend)
+- [DevOps Roadmap](https://roadmap.sh/devops)
+- [QA Roadmap](https://roadmap.sh/qa)
+- [Software Architect Roadmap](https://roadmap.sh/software-architect)
+- [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
+- [JavaScript Roadmap](https://roadmap.sh/javascript)
+- [React Roadmap](https://roadmap.sh/react)
+- [Vue Roadmap](https://roadmap.sh/vue)
+- [Angular Roadmap](https://roadmap.sh/angular)
+- [Node.js Roadmap](https://roadmap.sh/nodejs)
+- [Android Roadmap](https://roadmap.sh/android)
+- [Python Roadmap](https://roadmap.sh/python)
+- [Go Roadmap](https://roadmap.sh/golang)
+- [Java Roadmap](https://roadmap.sh/java)
+- [Design System Roadmap](https://roadmap.sh/design-system)
+- [DBA Roadmap](https://roadmap.sh/postgresql-dba)
+- [Blockchain Roadmap](https://roadmap.sh/blockchain)
 
 ## 🛠️ Installation Steps
 
