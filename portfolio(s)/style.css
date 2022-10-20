@@ -1,0 +1,448 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', cursive;
+
+}
+
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    margin: 0 5%;
+} */
+.header, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid #219ebc; */
+}
+
+.navbar ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 5rem;
+    /* display: inline-block; */
+    position: relative;
+    font-size: 1.3rem;
+    padding-bottom: 0rem;
+    margin: .5rem;
+    color: black;
+
+}
+
+.navbar li a:after {
+    content: "";
+    position: absolute;
+    background-color: #ff812c;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -1px;
+    transition: 0.3s;
+}
+
+.navbar li a:hover {
+    color: black;
+    font-weight: bold;
+    /* font-size: large; */
+}
+
+.navbar li a:hover:after {
+    width: 100%;
+}
+
+.header img, footer img {
+    height: 4.3rem;
+    /* border: 2px solid red; */
+    margin-left: 19.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h1 {
+    width: 0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: name 4s ease-in-out;
+    animation-fill-mode: forwards;
+    border-right: 3px solid #ff812c;
+    font-size: 4rem;
+}
+
+@keyframes name {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 16ch;
+    }
+}
+
+h1 {
+    position: relative;
+}
+
+h1:before {
+    content: "I'm Hrishitosh Thakur.";
+    top: 0;
+    left: 0;
+    width: 0;
+    position: absolute;
+    color: #ff812c;
+    overflow: hidden;
+    transition: all 1.5s linear;
+}
+
+h1:hover:before {
+    width: 100%;
+    /* text-shadow: 5px 5px 2px #333638; */
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.introbox {
+    /* height: 100vh; */
+    /* border: 2px solid red; */
+    /* margin: 1%; */
+}
+
+#introbox1 {
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+#introbox1 p {
+    font-size: 1.2rem;
+
+}
+
+#introbox2 {
+    margin-right: 5%;
+    margin-top: -2%;
+}
+
+#introbox2 img {
+    height: 75vh;
+
+}
+
+.box {
+    /* border: 2px solid #219ebc; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 2%;
+    border-radius: 10px;
+    height: 35vh;
+    width: 50vh;
+    background-color: #fff5ee;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    /* border: 2px solid black; */
+}
+
+.category {
+    font-size: 1rem;
+
+}
+
+.container h3 {
+    font-size: 1.3rem;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin: 0 5rem;
+}
+
+.click a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #ff812c;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 1400px;
+    }
+}
+
+.work {
+    /* border: 2px solid #219ebc; */
+    /* margin: 2%; */
+}
+
+#work, #contact{
+    margin: 2% 0% 0% 0%; 
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+    /* border-bottom: 2px solid red; */
+    
+}
+.hl{
+    border-bottom: 4px solid #ff812c;
+    width: 38vh;
+    margin: -0.6% 40%;
+    border-radius: 10px;
+}
+
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1%;
+}
+.contactContainer p, .contactContainer span{
+    font-size: 1.3rem;
+    margin-top: 1%;
+}
+.contactContainer p span, .contactContainer span span, #coffee span span{
+    color: #ff812c;
+}
+
+/* From uiverse.io by @adamgiebl */
+
+#mail {
+    font-family: inherit;
+    font-size: 1.2rem;
+    background: #fa8d44;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: 1px solid #f97822;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 1%;
+    transition: all 0.2s;
+}
+/* 
+#mail span a {
+    text-decoration: none;
+    color: white;
+} */
+.contactContainer a {
+    text-decoration: none;
+}
+#mail span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+    /* text-decoration: none; */
+}
+
+#mail svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#mail:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+#mail:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+#mail:hover span {
+    transform: translateX(5em);
+}
+
+#mail:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+.contactContainer form{
+    background-color: #fff5ee;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 2%;
+    padding: 2%;
+    /* border: 2px solid #ff812c; */
+    border-radius: 20px;
+}
+.contactContainer form a{
+    align-items: center;
+    justify-content: center;
+}
+.contactContainer form input, .contactContainer form textarea{
+    margin:1%;
+    padding: 1%;
+    background-color: #fff5ee;
+    border: 2px solid #ff812c;
+    border-radius: 10px;
+}
+
+.wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    /* float: left; */
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover{
+    width: 200px;
+  }
+  .wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1):hover .icon{
+    background: #4267B2;
+  }
+  .wrapper .button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3):hover .icon{
+    background: #E1306C;
+  }
+  .wrapper .button:nth-child(4):hover .icon{
+    background: #333;
+  }
+  .wrapper .button:nth-child(5):hover .icon{
+    background: #ff0000;
+  }
+  .wrapper .button .icon i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:hover .icon i{
+    color: #fff;
+  }
+  .wrapper .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+  .wrapper .button:nth-child(1) span{
+    color: #4267B2;
+  }
+  .wrapper .button:nth-child(2) span{
+    color: #1DA1F2;
+  }
+  .wrapper .button:nth-child(3) span{
+    color: #E1306C;
+  }
+  .wrapper .button:nth-child(4) span{
+    color: #333;
+  }
+  .wrapper .button:nth-child(5) span{
+    color: #ff0000;
+  }
+  /* for social platforms */
+  #socialplatforms .wrapper .button:nth-child(1):hover .icon{
+    background: #333;
+  }
+  #socialplatforms .wrapper .button:nth-child(2):hover .icon{
+    background: #2ec866;
+  }
+  #socialplatforms .wrapper .button:nth-child(3):hover .icon{
+    background: #333;
+  }
+  #socialplatforms .wrapper .button:nth-child(1) span{
+    color: #333;
+  }
+  #socialplatforms .wrapper .button:nth-child(2) span{
+    color: #2ec866;
+  }
+  #socialplatforms .wrapper .button:nth-child(3) span{
+    color: #333;
+  }
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+}
+.social{
+    margin:2% 1% ;
+    display: flex;
+    flex-direction: column;
+}
+.social span{
+    margin-bottom: 6%;
+}
+.vl {
+    border-left: 4px solid #f97822;
+    height: 110px;
+    margin:2.5% 5%;
+  }
+.socials{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    background-color:rgb(229, 227, 227);
+    border-radius: 20px;
+}
+footer{
+    /* width: 90%; */
+    border: 2px solid black;
+    margin: 4% 1% 1% 1%;
+    justify-content: space-around;
+    height: 6vh;
+    background-color: rgb(235, 234, 234);
+    border-radius: 20px;
+}
+footer div img{
+    margin-top: 2%;
+}
