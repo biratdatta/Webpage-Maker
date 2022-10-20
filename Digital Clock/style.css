@@ -14,6 +14,7 @@
         margin: 100px auto 0px auto;
         position: relative;
         border:20px solid cornsilk;
+        box-shadow: 1px 1px 10px black;
     
     }
     .center{
@@ -25,6 +26,7 @@
         height: 20px;
         border-radius: 50%;
         z-index: 20;
+        box-shadow: 1px 1px 10px black;
     }
     .hourHand{
         width: 10px;
@@ -38,6 +40,7 @@
         z-index: 10;
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
           transform: rotate(360deg);
+          box-shadow: 1px 1px 10px black;
     
     }
     .minuteHand{
@@ -52,6 +55,7 @@
         z-index: 9;
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
           transform: rotate(90deg);
+          box-shadow: 1px 1px 10px black;
     
     }
     .secondHand{
@@ -67,6 +71,7 @@
         transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
         z-index: 8;  
           transform: rotate(360deg);
+          box-shadow: 1px 1px 10px black;
     
     }
     .time{
@@ -81,6 +86,7 @@
         border-radius: 5px;
         min-width: 70px;
         height: 15px;
+        box-shadow: 1px 1px 10px black inset;
     
     }
     .time small{
