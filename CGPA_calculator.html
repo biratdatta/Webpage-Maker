@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html - lang-"eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width-device-width, intial-scale-1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            display: flex;
+            padding: 0px 25px;
+            background-color: rgb(red, green, blue);
+
+        }
+
+        .item {
+            padding: 3px 23px;
+            list-style: none;
+            background-color: blue;
+        }
+
+        .item a {
+            color: yellow;
+            padding: 34px 0px;
+            display: block;
+            font-size: 20px;
+        }
+
+        .container {
+            background-color: orange;
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 20%;
+        }
+
+        body {
+            background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+            background-size: auto;
+        }
+
+        .foot {
+            text-align: center;
+            text-decoration-color: red;
+        }
+
+        .head {
+            font-size: 30px;
+            font-weight: 800;
+        }
+
+        .screen {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        @media (max-width:1200px) {
+            nav {
+                display: flex;
+                padding: 0px 10px;
+                background-color: rgb(red, green, blue);
+
+            }
+
+            .item {
+                padding: 1px 8px;
+                list-style: none;
+                background-color: blue;
+                font-size:6px;
+            }
+
+            .item a {
+                color: yellow;
+                padding: 14px 0px;
+                display: block;
+                font-size: 40px;
+            }
+
+            .container {
+                background-color: rgb(157, 235, 84);
+                padding: 40px;
+                margin: 30px auto;
+                max-width: 60%;
+                height: 70vh;
+            }
+
+            .text1 {
+                margin: 0em;
+                padding: 1px 2px;
+                border-width: 2px;
+                border-style: inset;
+                max-width: 35%;
+                text-size-adjust: 30hv;
+                font-size: 40px;
+            }
+
+            .text2 {
+                max-width: 35%;
+                font-size: 70px;
+            }
+
+            header {
+                font-weight: 1000;
+                font-size: 100px;
+            }
+
+            body {
+                background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+            }
+
+            .foot {
+                text-align: center;
+                text-decoration-color: red;
+                font-size: 60px;
+            }
+
+            .text3 {
+                font-size: 50px;
+                font-weight: 200;
+            }
+
+            .btn {
+                height: 60px;
+                width: 90px;
+
+            }
+
+            .screen {
+                font-size: 40px;
+                font-weight: 700;
+            }
+
+            .head {
+                font-size: 50px;
+                font-weight: 600;
+            }
+
+
+        }
+    </style>
+
+</head>
+
+
+
+<script>
+    $(document).ready(function () {
+
+    });
+    function submit1() {
+        var a = document.getElementById("number1").value;
+        var b = document.getElementById("number2").value;
+        var c = document.getElementById("number3").value;
+        var o = "Enter another operation";
+        var h = (parseInt(a) / parseInt(b)) * 100;
+        if (c == 1) {
+            document.getElementById("screen1").innerHTML = (parseInt(a) / parseInt(b)) * 100;
+        }
+        else if (c == 2) {
+            document.getElementById("screen1").innerHTML = (parseInt(a) / parseInt(b)) * 95;
+        }
+
+
+        else if (c == 3 && h > 90) {
+            document.getElementById("screen1").innerHTML = "A Grade";
+        }
+
+        else if (c == 3 && h > 80 && h <= 90) {
+            document.getElementById("screen1").innerHTML = "B Grade";
+        }
+
+        else if (c == 3 && h > 70 && h <= 80) {
+            document.getElementById("screen1").innerHTML = "C Grade";
+        }
+
+        else if (c == 3 && h > 60 && h <= 70) {
+            document.getElementById("screen1").innerHTML = "D Grade";
+        }
+
+        else if (c == 3 && h <= 60) {
+            document.getElementById("screen1").innerHTML = "Fail";
+        }
+        else
+            document.getElementById("screen1").innerHTML = o;
+
+    }
+</script>
+<head2>
+
+
+
+</head2>
+
+<body>
+    <nav>
+        <li class="item"><a href="index.html"> Home </a></li>
+        <li class="item"><a href="#"> About </a></li>
+        <li class="item"><a href="#">Privacy Policy</a> </li>
+     
+    </nav>
+
+    <div class="container">
+        <p>
+        <header>
+            <p3 class="head">Cgpa Calculator</p3>
+        </header>
+        <p>
+
+            <label class="text3">Marks Obtain</label>
+            <input type="text" name="number1" class="text1" id="number1" placeholder="Enter the number"> <br>
+            <label class="text3">Total Marks &nbsp; </label>
+            <input type="text" name="number2" class="text1" id="number2" placeholder="Enter the number"><br>
+            <label class="text3">Operation &nbsp; </label>
+            <input type="text" name="number3" class="text1" id="number3" placeholder="Enter the operation"><br>
+            <button type="button" class="btn" onclick="submit1()">submit</button><br><br>
+            <button type="reset" class="btn"> <a href="index.html">Reset</a> </button><br><br>
+        <div class="screen" id="screen1"></div>
+        </p>
+        <br>
+        <p2 class="text2">Enter 1 : Percentage<br></p2>
+        <p2 class="text2">Enter 2 : Cgpa<br></p2>
+        <p2 class="text2">Enter 3 : Grade <br></p2>
+
+
+    </div>
+</body>
+
+<footer>
+    <div>
+        <p class="foot">
+            Made with &hearts; by khushpreet.
+
+        </p>
+
+    </div>
+</footer>
+
+</html>
