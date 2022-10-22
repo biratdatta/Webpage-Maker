@@ -1,0 +1,40 @@
+body{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding-top:20vh;
+	background-color: rgb(30,30,30);
+}
+.main{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+#image-input{
+	display: none;
+}
+#display-image{
+	margin-top: 20px;
+	width: 30vw;
+	height: 50vh;
+	border: 1px solid rgb(207, 224, 180);
+	border-radius: 20px;
+	background-position: center;
+	background-size: cover;
+}
+.pics{
+	width:10vw;
+	height:5vh;
+	border: solid 1px;
+	border-radius: 10px;  
+	background-color: rgb(20,20,20,0.100);
+	text-align: center;
+	color: orange;
+	margin-top: 12px;
+}
+.pics:hover{
+	color: rgb(255, 255, 255);
+	background-color: rgb(250,250,250,0.100);
+}
