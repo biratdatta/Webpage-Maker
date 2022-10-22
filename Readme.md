@@ -36,6 +36,8 @@ I have a very Easy Project for you to work on. My Repo is about documenting HTML
 > Covers the basics on Django framework.
 - [Tailwind CSS Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/tailwind/Tailwind%20CSS.md)
 > Covers the basics on Tailwind CSS
+- [Conda Cheat Sheet](https://github.com/Dicky1/Webpage-Maker/blob/master/conda-cheatsheet.md)
+> Covers the basics on Conda
 
 # ROADMAPS FOR WEB DEVELOPMENT IN ROADMAP.SH  👇
 
