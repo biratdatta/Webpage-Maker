@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oleo+Script&display=swap');
+*{
+box-sizing: border-box;
+padding: 0;
+text-decoration: none;
+margin: 0;
+list-style: none;
+scroll-behavior: smooth;
+font-family: 'Oleo Script', cursive;
+/* font-family: 'Marck Script', cursive; */
+}
+@font-face {
+    font-family: 'Oleo Script',cursive;
+    src: url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oleo+Script&display=swap');
+}
+body {
+	margin:  0;
+    padding: 0%;
+    font-family: 'Marck Script', cursive;
+}
+/* navigation */
+nav{
+    height: 80px;
+    background-color:#000 ;
+    width: 100%;
+    z-index: 10;
+}
+.nav{
+    position: relative;
+
+}
+nav ul{
+    float: right;
+    margin-right: 5%;
+}
+nav li{
+    display: inline-block;
+    margin: 0 10px;
+    line-height: 90px;
+}
+nav a{
+    color: white;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+.logo{
+    color: #fff;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 1.6%;
+}
+.dropdown{
+    display: none;
+}
+ul li:hover .dropdown{
+    background-color: black;
+    color: white;
+    top: 80px;
+    padding: 5px;
+    position: absolute;
+    display: block;
+    margin-left: -40px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+ul li:hover .dropdown li{
+display: block;
+width: 250px;
+text-align: left;
+border-bottom: 2px dotted white;
+}
+ul li:hover .dropdown li:last-child{
+border-bottom: none;
+}
+.fas{
+ margin: 5px;
+}
+.dropdown_menu:hover{
+color:#fcde67 ;
+transition: .5s;
+background: transparent;
+}
+.active,a:hover{
+transition: .5s;
+background-color:#fcde67 ;
+color: black;
+}
+nav .checkbtn{
+    color: white;
+    font-size: 20px;
+    line-height: 100px;
+    float: right;
+    margin-right: 10%;
+    display: none;
+    cursor: pointer;
+}
